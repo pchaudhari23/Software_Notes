@@ -1,0 +1,324 @@
+- Are you saying that....? / So you are saying that...../ You mean......right??
+- First things first....
+- That's your call/ That's not your call/ Take your call on that..../ I had to take a call.....
+- Come again
+- Like I said
+- Look's a bit dicey
+- With that in mind
+- Let's get started
+- However
+- On the other hand
+- Indeed
+- Let's get back at.../ Let's circle back at.....
+- Keep me in the loop
+- Don't want to loose the grip on ....
+- I really appreciate it/ Appreciate the effort
+- Had a word with...
+- Connecting the dots
+- I had my feet in both places
+- Feel free / Please feel free
+- In the first place
+- Going forward
+- Might as well/ You might as well/ We might as well
+- As well
+- Real quick
+- For instance
+- For one
+- On top of that
+- Heck I don't even
+- The fact
+- Folks/ Some folks
+- Not bad
+- I haven't had a chance to....
+- That's exactly what
+- Had......
+- If I am not wrong
+- Something called/ Something like
+- In that case
+- Imagine for a moment
+- Not very keen/ I am keen on
+- Come to terms with it...
+- How can we go about it? / How are we going to go about it?
+- Yup!!! That works
+- Nothing fancy going on here
+- That's pretty much it/ that's about it
+- Good catch
+- That's that
+- Rather
+- Perhaps
+- It seems
+- Looks like
+- I'll take the liberty to...
+- But you get the point.../ But you get the idea...
+- I believe..
+- Any blockers on...?
+- On that front...
+- We had a discussion...
+- Understanding
+- Observations
+- Context
+- All right guys, let's get back to work
+- Cool
+- All good?
+- Scenario
+- On my plate/ In my bucket
+- Bandwidth
+- Keep an eye on...
+- Explore that...
+- Behaviour of that...
+- Observe the behaviour of that...
+- Justification or justify
+- Understanding gap/ Communication gap/ Knowledge gap
+- Defend him or become defensive
+- There we go / Here we go
+- Over to you Suryakant....
+- Sorry to interrupt
+- Yes...Please go ahead
+- As in
+- In the sense
+- Having said that...
+- All said and done
+- I suggest, I have a suggestion, I would suggest
+- Stylish, Classy and cheesy, funky, cool
+- In my understanding/ Just wanted to understand
+- As per my knowledge
+- Please correct me if I am wrong
+- I am disappointed
+- Without having to reinvent the wheel
+- That's the beauty of it
+- God forbid if...
+- I mean
+- Where is this coming from
+- I saw that coming
+- My hands are tied
+- Good one
+- No doubt/ Without any doubt
+- No surprises there
+- That is a luxury we cannot afford right now
+- Resolve the issue
+- My question to you is this...
+- Are you telling me that...?
+- By all means
+- Sounds good to me, sounds good
+- Say 24th March???/ Say
+- Maybe it's....
+- To answer your question
+- Need I remind you....?
+- Turns out that / As it turns out
+- I am functioning correctly/ I am not functioning correctly/ The way this world functions
+- Given the / Givent that/ Given the fact
+- Now that...
+- Fair enough
+- Noted
+- I could say that(I had a good time)/ One could say that(I had a good time)
+- Why this you may ask.... / You may ask why this???
+- May I ask? / Why this may I ask?
+- You remain open to the possibility that....
+- That is strange...
+- It never occured to me
+- That is what I have come to know
+- More about that later...
+- That's about it
+- Matter of fact
+- Mind it / Mind you
+- Taken into consideration
+- Now that I think of it/ Come to think of it
+- If you think about it...
+- I mean think about it....
+- Speaking of which
+- Bear with me
+- ....and all
+- Like it or not
+- As we speak
+- So to speak
+- I understand/ I get it/ Understood/ I get that
+- I see/ Oh I see
+- That is what I am implying/ What are you implying
+- Assuming/ I assume/ I am assuming
+- Let's say
+- Let me put it this way
+- Let's face it
+- Nice try!!!
+- In my experience
+- In all likeliness/ there is a good chance...
+- It's unlikely/ It's highly unlikely
+- Not really
+- You sound like
+- Not to mention the fact that
+- It's obvious / Isn't it obvious
+- For obvious reasons
+- Out of the equation/ Out of the picture
+- Oh
+- Rest assured
+- On a casual note/ on a serious note/ on a sidenote / on a different note
+- No wonder
+- Come what may
+- Clearly
+- .....or what?
+- Be that as it may
+- Be taken into account
+- Not that....
+- I must say
+- Benefit of doubt..
+- I will give her that / I give that to you
+- Tell me something
+- We can't....if that's what you are asking
+- Switching gears between
+- Time is of essence
+- We don't have the luxury of time
+- What were you thinking? / I don't know what was I thinking/ What was I thinking
+- I will take it from here/ We will take it from there
+- Convinient/ How convinient/ As per your convinience
+- I would like to think so
+- I was under the impression that...
+- You know/ You know what...
+- Anticipated
+- Exactly my point
+- On my part
+- May I know...? / Can I know...? / Can you please tell me the....?
+- In terms of...
+- it is essential that/ Essentially
+- Certainly
+- been through a lot lately...
+- It's important to note that
+- Makes sense/ That makes sense/ dosen't make any sense
+- Watch it/ watch him/ watch your...
+- Gone are those days
+- Good old...
+- That's a possibility.../ let's discuss this possibility
+- Yes....Tell me
+- Meanwhile
+- Well put
+- Behind the scenes
+- I got your point
+- Wait a minute...
+- Never mind
+- I know for a fact that
+- What's with the....?
+- We can rule that out....
+- That explains....
+- Realise
+- (On a call) - I lost you for 10 seconds/ your voice is breaking/ am I audible/ you are not audible/ you are going in and out
+- Can you please repeat? OR Can you please come again? OR Pardon?
+- In other words../ In simple words
+- Either way
+- Let's call it a day
+- Sorry my bad.....
+- So for example....
+- what (eg: an average person sleeps, what 8 or 10 hours a day?)
+- what do you think?
+- busy day, huh?
+- Remember? / If you remember...
+- About that....
+- Yeah/ Yup
+- Understood
+- Let's forget about that
+- Hey guys...
+- I hope/ I was hoping.....
+- Hopefully
+- Right?
+- You know....
+- Anyways
+- Shoot...!!!!
+- Right away
+- Across/ Around the globe
+- Heads up
+- Catch up with you
+- so on and so forth
+- on the contrary
+- Quite sometime/ Quite an achievement....
+- I guess/ I am guessing
+- Let's keep it simple....
+- I stumbled upon.....
+- Besides
+- Came across
+- Considering
+- What am I missing?
+- I am not taking any chance
+- By any chance
+- I still feel bit odd
+- What the F is this guy all about....
+- Are we on the same page/ Everyone should be on the same page/ On the same page
+- No kidding
+- In the spirit of...
+- Like/ be like
+- I am guilty of that...
+- While we are at that
+- Experimentation
+- I am glad
+- Pritam...the brave guy he is.....
+- As beautiful as it is....this thing has the potential to....
+- The other way around
+- This is insane/ this is crazy
+- Unbelievable
+- Freaking/ freakin...
+- Take a look at that
+- Keep in mind/ Bear in mind
+- Pritam Chaudhari.....nice to meet you
+- The show must go on
+- so called....
+- if you don't mind/ would you mind if...
+- Thanks to you....
+- Not a big fan of...
+- Not sure how....
+- Never want to be in a situation......
+- For that matter.........
+- Keep me posted
+- With all due respect
+- I respectfuly disagree
+- Sorry to say...
+- That's a story for another day...
+- Can I pull you in a call?
+- If you know what I mean....
+- Defeats the purpose..
+- Realise/ understand the gravity of this...
+- We happen to have/...
+- Is this a good time?
+- have a good one
+- I am a bit occupied
+- God dammmmn...
+- One hell of a....
+- ....did we/ .....are we. Eg: Acting smart are we?
+- How are we doing on...
+- By the by...
+- ... itâ€™s difficult to understand the sugar and spice of it
+- Anyone?....No one?....No one?.....Okay
+- Am I right or am I right?
+- If it came to that....
+- Saturday book jhalay majha.....
+- And whatever little I have achieved in my life so far....
+- What is.....if it's not .....? Eg: What is love if it's not a mix of both.
+- If you say so, I have to take you at your word.
+- In that regard...
+- Breathing space
+- this is ...... unlike the other.....
+- This is going somewhere...I don't want it to go
+- Wholesome experience
+- Fingers crossed
+- Let's just say/ Let's just say I have girls who are my friends
+- One that you are referring to..
+- Can you rephrase your question/ The way he phrased the question...
+- Sort of...
+- Check it out..
+- It's pretty cool
+- What a pleasant surprise...
+- What a small world...
+- Needless to say..
+- If you know you know...
+- What action is required on this...
+- Double check..
+- Guess what...
+- Touch base
+- Call it out
+- Oh!! Like that!!
+- For the record
+- It is what it is..
+- It is what it is.... take it or leave it
+- Yes...It does take a toll....
+- On the fly
+- Whether it's... or.... Is a topic of debate/ it is debatable, but ...
+- On top of my head... I have an idea
+- I just got carried away...
+- There's no excuse, no explanation for this....
+- Here and there/ Now and then...
+- It's not a game changer

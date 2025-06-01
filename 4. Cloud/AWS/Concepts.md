@@ -72,8 +72,8 @@ Distributed system:
 
 CONTAINERS:
 
-- Virtual Machines [Application, Dependencies, Guest OS] -> Hypervisor -> Infrastructure/Hardware
-- Containers [Application, Dependencies] -> Container Engine/Platform/Docker -> Host OS -> Infrastructure/Hardware
+- Virtual Machines [Application, Dependencies, Guest OS] => Hypervisor => Infrastructure/Hardware
+- Containers [Application, Dependencies] => Container Engine/Platform/Docker => Host OS => Infrastructure/Hardware
 - Containers are lightweight.
 - Application and its dependencies are packaged as a single unit called container and deployed on container platform. It makes them reusable.
 - Multiple packages can be deployed on a container platform and all of them use the same OS and same hardware. Unlike VM which has a guest OS.

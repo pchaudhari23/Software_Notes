@@ -3,9 +3,9 @@ FEATURES:
 - State management library.
 - In built widgets in flutter_bloc
 - Seperate the presentation layer from business logic. Connects the Usecase and UI.
-- event -> bloc -> state
-- UI -> i. dispatch events to the bloc, ii. react to the states from the bloc.
-- FLOW: UI -> Bloc -> Call to Usecase -> Repository(Impl) -> DataSource
+- event => bloc => state
+- UI => i. dispatch events to the bloc, ii. react to the states from the bloc.
+- FLOW: UI => Bloc => Call to Usecase => Repository(Impl) => DataSource
 - Business logic in clean architecture is to call usecase
   4 files:
   1.feature_bloc

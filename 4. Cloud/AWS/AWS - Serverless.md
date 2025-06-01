@@ -167,7 +167,7 @@ Streams:
 - A DynamoDB stream is an ordered flow of information about changes to items in an Amazon DynamoDB table.
 - When you enable a stream on a table, DynamoDB captures information about every modification to data items in the table.
 - A stream record contains information about a data modification to a single item in a DynamoDB table.
-- StreamViewType -> NEW_AND_OLD_IMAGES: before and after modification, NEW_IMAGE: after modification, OLD_IMAGE: before modification
+- StreamViewType => NEW_AND_OLD_IMAGES: before and after modification, NEW_IMAGE: after modification, OLD_IMAGE: before modification
 - All data in DynamoDB Streams is subject to a 24-hour lifetime.
 
 ---

@@ -35,14 +35,14 @@ typecasting: something as datatype
 ---
 
 Util:
-JSON -> Model class -> Display
+JSON => Model class => Display
 Model class - Every object in json is a new class - new class is nested under main class
 
 1. fromJSON - from json object to model class - similar to JSON.parse()
-   Map<String, dynamic> (a json object - because a json object is of type map with string keys and dynamic values) -> fromJSON -> Model class object
+   Map<String, dynamic> (a json object - because a json object is of type map with string keys and dynamic values) => fromJSON => Model class object
 2. toJSON - from model class to json object - similar to JSON.stringify()
    return type Map<String, dynamic> and no arguments
-   toJSON -> JSON object
+   toJSON => JSON object
 
 - json.decode()?
 - json.encode()?
