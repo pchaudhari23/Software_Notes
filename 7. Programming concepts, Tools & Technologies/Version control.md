@@ -2,7 +2,8 @@ Git:
 
 - It is a distributed version control system which is used to track the changes made in the source code file or revert back to previous versions during the development of any project.
 - GitHub is owned by Microsoft and was created by Linus Torvald.
-- Features:
+
+FEATURES:
 
 1. Economical - Under GPL (GNU Public Licence)
 2. Secure
@@ -12,7 +13,7 @@ Git:
 6. Distributed
 7. Supports parallel, non linear development with the help of branching.
 
-- Platforms:
+PLATFORMS:
 
 1. GitHub
 2. GitLab
@@ -20,7 +21,7 @@ Git:
 4. Sourcetree
 5. Tortoise Git
 
-- Other Version control systems:
+Other Version control systems:
 
 1. Mercurial
 2. CVS
@@ -35,7 +36,7 @@ Step 2: Commit the changes (to Local Repository)
 Step 3: Push the changes (to Remote/Central Repository)
 
 1. Pull from remote repository
-2. Add a file -=> commit (to local repository) -=> push to central repository
+2. Add a file => commit (to local repository) => push to central repository
 
 ---
 
@@ -190,8 +191,8 @@ Steps to commit only some files among number of modified files:
 2. git commit -m "commit message" : will commit the 4 files added to staging area
 
 To revert the commits OR uncommit last 'n' commits and keep them in working directory:
-git reset --soft HEAD~n
-eg: to revert last 2 commits use - git reset --soft HEAD~2
+git reset --soft HEAD~n~
+eg: to revert last 2 commits use - git reset --soft HEAD2
 
 To undo the last commit and discard the changes (completely remove them): git reset --hard HEAD~1
 

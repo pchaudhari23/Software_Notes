@@ -1,0 +1,15 @@
+1.Tuples
+2.Sets
+------------------------------------------------
+Libraries:
+1.Numpy
+2.Pandas
+3.Django
+4.Flask
+5.NLTK
+6.Requests
+------------------------------------------------
+Functions - 
+variable scope - local and global
+
+Class & Object

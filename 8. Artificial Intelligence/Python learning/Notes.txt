@@ -1,0 +1,218 @@
+Running: 
+Cmd - run python OR run python cli from start OR run IDLE from start to run python shell OR 
+run a file in IDE - run 'python filename.py' in terminal
+
+Check version: py -3 --version, pip3 --version
+
+Cntrl + ` -> Open existing closed terminal, Cntrl + Shift + ` -> Open new terminal
+
+Features:
+1.Interpreted - Executed line by line.
+2.Object oriented
+3.Dynamically typed - No need to declare variable types like var or let or const or int or bool etc.
+4.REPL - Read-Eval-Print-Loop - To run the program in the CLI without having to create a file for it.
+---------------------------------------------------------
+Data types:
+1.Numeric - int, float
+2.Sequence - str, list, tuple, range
+3.Mapping - dict
+4.Set - set, frozenset
+5.Boolean - bool
+6.None - null
+---------------------------------------------------------
+Collections:
+
+
+---------------------------------------------------------
+print - for console log
+input('Enter a number') OR input() - to capture user input, returns user input in string
+type() - to check the data type
+int() - used to convert string to integer
+float() - used to convert string to float
+round() - built-in function that rounds to the closest whole number
+str() - used to convert integer or float to string
+lower() - to convert a string to lower case
+any([]) - takes an iterable like list as argument and returns True if any item in the iterable is True. Otherwise, it returns False.
+---------------------------------------------------------
+DATES: 
+from datetime import date
+print(date.today())
+---------------------------------------------------------
+Command line arguments: arguments given in cli before running the code in a file.
+Eg: program.py 12 87 -> sys.argv[0] = program.py, sys.argv[1] = 12
+
+import sys
+
+print(sys.argv)
+print(sys.argv[0]) # program name
+print(sys.argv[1]) # first arg
+---------------------------------------------------------
+Must be indented always
+if test_expression:
+    # statement(s) to be run
+elif test_expression:
+    # statement(s) to be run
+elif test_expression:
+    # statement(s) to be run
+else:
+    # statement(s) to be run
+---------------------------------------------------------
+sub-expression1 or sub-expression2
+sub-expression1 and sub-expression2
+---------------------------------------------------------
+Operators - 
+1.Arithmetic: +, -, *, /, 
+// (floor division) <- if the answer is 13.827 this will return just integer 13
+% (modulo operator) <- return remainder of division
+2.Assignment: =, +=, -=, *=, /=
+
+Order of operation:
+1.Parentheses
+2.Exponents
+3.Multiplication and division
+4.Addition and subtraction
+
+Absolute value - abs(number) - returns the negative number without sign.
+Rounding - round(decimal value) - rounds of to 
+if decimal greater than 0.5 - round up
+if decimal less than 0.5 - round down
+if decimal equal to 0.5 - round up or down to nearest even integer
+
+math library - from math import ceil, floor
+---------------------------------------------------------
+LISTS:
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+planets[2] = "Earth"
+
+len(planets) - determine length of list
+planets.append("Pluto") - add to list
+planets.pop() - remove last item
+planets.index("Jupiter") - finding index of an item
+
+negative indexes - starts from end of list to beginning - planets[-1] : "Neptune"
+
+gravity_on_planets = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.889, 1.12]
+min(gravity_on_planets) - returns smallest value
+max(gravity_on_planets) - returns largest value
+
+Manipulating lists:
+Slice - planets[0:2]
+Sort - Sorts alphabetically or numerically - regular_satellite_moons.sort(), 
+to sort in reverse order regular_satellite_moons.sort(reverse=True)
+Join - 
+amalthea_group = ["Metis", "Adrastea", "Amalthea", "Thebe"]
+galilean_moons = ["Io", "Europa", "Ganymede", "Callisto"]
+regular_satellite_moons = amalthea_group + galilean_moons - ['Metis', 'Adrastea', 'Amalthea', 'Thebe', 'Io', 'Europa', 'Ganymede', 'Callisto']
+---------------------------------------------------------
+while loop: to perform repetitions unknown number of times
+while <condition>:
+    # code here
+---------------------------------------------------------
+Iterables - Data types which on which we can run loops
+for loop:-
+countdown = [4, 3, 2, 1, 0]
+for number in countdown:
+    print(number)
+print("Blast off!! 🚀")
+
+For destructuring the items in for loop
+for left, right in list:
+    #statement
+---------------------------------------------------------
+Dictionaries:
+planet = {
+    'name': 'Earth',
+    'moons': 1
+}
+
+1.Reading values - print(planet.get('name')) OR print(planet['name'])
+2.Updating values - planet.update({'name': 'Makemake'}) OR planet['name'] = 'Makemake'
+3.Adding keys - planet['orbital period'] = 4333
+4.Removing keys - planet.pop('orbital period')
+5.Adding complex data - adding dictionary in another dictionary
+# Add address
+planet['diameter (km)'] = {
+    'polar': 133709,
+    'equatorial': 142984
+}
+
+# planet dictionary now contains: {
+#   name: 'Jupiter'
+#   moons: 79
+#   diameter (km): {
+#      polar: 133709
+#      equatorial: 142984
+#   }
+# }
+
+- Printing dynamic values in string: print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
+- Keys are case sensitive. 'Names' is different than 'names'.
+
+Dynamic programming in dictionaries:
+rainfall = {
+    'october': 3.5,
+    'november': 4.2,
+    'december': 2.1
+}
+
+for key in rainfall.keys():
+    print(f'{key}: {rainfall[key]}cm')
+
+OUTPUT:
+october: 3.5cm
+november: 4.2cm
+december: 2.1cm
+
+Determine if a key exists in a dictionary:
+if 'december' in rainfall:
+    rainfall['december'] = rainfall['december'] + 1
+else:
+    rainfall['december'] = 1
+
+# Because december exists, the value will be 3.1
+
+Retrieving the values:
+total_rainfall = 0
+for value in rainfall.values():
+    total_rainfall = total_rainfall + value
+
+print(f'There was {total_rainfall}cm in the last quarter.')
+---------------------------------------------------------
+Functions:
+- In Python, if a function doesn't explicitly return a value, it implicitly returns None.
+- All the arguments to the function are mandatory to use.
+- There are some optional arguments called keyword arguments. The default value must be assigned to them.
+- In case of multiple arguments, mandatory arguments must be declared first followed by keyword arguments.
+def rocket_parts():
+    return "payload, propellant, structure"
+
+- If number of arguments are not known beforehand, variable arguments must be passed.
+def variable_length(*args):
+    print(args)
+
+- For varaible number of keyword arguments :-
+def variable_length(**kwargs):
+    print(kwargs)
+---------------------------------------------------------
+Error handling:-
+try:
+     open('config.txt')
+except FileNotFoundError:
+     print("Couldn't find the config.txt file!")    
+
+To reuse or inspect an exception:
+try:
+     open('config.txt')
+except FileNotFoundError as err:
+     print("Couldn't find the config.txt file!") 
+
+Grouping multiple exceptions:
+except(ValueError, TypeError)
+
+To raise an exception manually:
+raise RuntimeError(...) 
+raise RuntimeError(...) 
+---------------------------------------------------------
+To run a file - Start the python REPL. Then type - python <filename>
+
+TUPLE: ????

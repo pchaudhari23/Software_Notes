@@ -24,3 +24,11 @@ JSON Tools:
 3. Mockaroo: Used to generate real data - Generate JSON to use it in projects
 
 ---
+
+AI TOOLS:
+
+1. Code - Github copilot, ChatGPT
+2. Dev - Lovable.dev
+3. Video
+4. PPT
+5.

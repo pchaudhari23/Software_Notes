@@ -1,3 +1,15 @@
+Links:
+
+https://github.com/ResoCoder/flutter-tdd-clean-architecture-course
+
+https://www.youtube.com/watch?v=KjE2IDphA_U&list=PLB6lc7nQ1n4iYGE_khpXRdJkJEp9WOech
+
+https://resocoder.com/flutter-clean-architecture-tdd/
+
+https://resocoder.com/category/tutorials/flutter/tdd-clean-architecture/
+
+---
+
 FEATURES:
 
 - Seperation of concerns.
