@@ -109,5 +109,6 @@ CORPORATE TERMS:
 1. CC, BCC
 2. OOO
 3. KRA,KPI
+4. Meeting MOM (Minutes Of Meeting)
 
 ---

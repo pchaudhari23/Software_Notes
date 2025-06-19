@@ -33,10 +33,10 @@ Other Version control systems:
 
 Step 1: Add files (to the Staging Area)
 Step 2: Commit the changes (to Local Repository)
-Step 3: Push the changes (to Remote/Central Repository)
+Step 3: Push the changes (to Remote Repository)
 
 1. Pull from remote repository
-2. Add a file => commit (to local repository) => push to central repository
+2. Add a file => commit (to local repository) => push to remote repository
 
 ---
 
@@ -57,6 +57,8 @@ MERGE REQUEST/PULL REQUEST:
 - Create Merge request/ Raise Pull request
 - Select source branch and destination branch, then create request.
 - Assign Reviewer (usually a senior dev or lead from the team): To do code review
+- Sometimes live code review is done
+- Resolve the comments on PR and reply to comments
 - Assign Approver:To have the branch merged into the main branch.
 - Branch is merged in develop branch.
 
@@ -66,10 +68,11 @@ So 2 steps - 1.Approve the merge request, 2.Merge the merge request branch
 
 CONVENTIONS:
 When new project is started: Create three branches from main
-1.Production branch
-2.Testing or UAT branch
-3.Develop branch
-4.Feature/Bug branches (created from and merged into develop branch)
+
+1. Production branch
+2. Testing or UAT branch
+3. Develop branch
+4. Feature/Bug branches (created from and merged into develop branch)
 
 - main/master branch : this is root branch, all the code is deployed on this branch - production environment
 - develop branch - this branch is created from main branch, all the developer's work and feature developments are merged in this branch and tested. Push this branch in main only if everything is working fine.
@@ -143,12 +146,12 @@ GitHub commands: (on git bash - go to local repository folder => R click => Git 
    |---=> cat `<path>` (.pub extension)
 10. Key Authentication:
     i. ssh -T `<ssh url>`
-    ii. ssh -keygen -t rsa (In central repository: Settings=> SSH and CPG keys => New SSH Key => (copy generated SSH key from git bash) => paste => add ssh key)
+    ii. ssh -keygen -t rsa (In remote repository: Settings=> SSH and CPG keys => New SSH Key => (copy generated SSH key from git bash) => paste => add ssh key)
 11. git branch -m master main: change name of master branch to main
 
 ---
 
-- To create a repository in central repository:
+- To create a repository in remote repository:
 
 * Start a project => Repository name & optional description => public or private??? => Initialize this repository with a README => Add .gitignore: NONE, Add a licence: NONE.
 * README => edit => you can write a readme description => Commit changes
@@ -256,3 +259,11 @@ GIT MERGE in main before raising PR:
 =====================================================================================
 
 - Commit delta changes, only selected files.
+
+---
+
+MERGE & DEPLOYMENT PROCESS:
+
+dev branch is merged into test and test branch is merged into prod after respective testing
+
+For some user story, multiple developers work on the same branch.

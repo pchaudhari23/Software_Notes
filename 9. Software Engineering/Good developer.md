@@ -29,6 +29,8 @@ Debugging skills:
 27. debug in your mind???
 28. shifting the gears???
 29. How to increase coding productivity???
+30. Refactor your code from time to time
+31. Test your development
 
 ---
 
@@ -37,6 +39,10 @@ Debugging skills:
 1. Learning - new things
 2. Core skills - Debugging, problem solving, critical, analytical thinking, being useful in a project
    It's one thing to learn new technology, some udemy course, youtube, blog, chatGPT or building hobby project. But its completely different to contribute to ongoing production app or a project.
+
+- Explore the GitHub repo of any product or library. To know how company or open source technology works technically.
+- Upgrading dependencies/libraries during ongoing project? Usually we don't upgrade to latest versions immediately, we wait for it to become stable?
+- Developers and testers must understand business requirements first. That is the source of knowledge for both. If both are on the same page only then the project can happen otherwise there will be miscommunication and conflicts between devs and QA.
 
 ---
 

@@ -1,36 +1,20 @@
-Data Structures: It is a format of storing and organizing data in order to access or modify it efficiently.
-Need of data structures:
-
+- Data Structures: It is a format of storing and organizing data in order to access or modify it efficiently.
 - Data structures are formed and stored in main memory (RAM) at runtime, when program is being executed.
 - We structure the data and develope algorithms to access or modify them quickly and efficiently.
 - We also structure the data to reduce the memory requirements of the program.
-
----
-
-Algorithms:
-
 - An algorithm is a sequence of actions which are taken to solve a problem.
 - Depending on a particular problem, a particular data structure is choosen and an algorithm is applied on that data structure to solve the problem.
-
----
-
-Data structures vs Database:
-
-- Data structure reside in primary memory at program runtime. They are temperory.
+- Data structures vs Database: Data structure reside in primary memory at program runtime. They are temperory.
 - Database exisits in secondary memory and is permanent.
 
 ---
 
 Types of data structures:
-1.Linear and non-linear
-2.Homogeneous and non homogeneous
 
-- Linear data structures: Arrays, Stack, Queue, Linked list
-- Non linear data structures: Tree, Graph
-
----
-
-Structures:
+1. Linear and non-linear
+   - Linear data structures: Arrays, Stack, Queue, Linked list
+   - Non linear data structures: Tree, Graph
+2. Homogeneous and non homogeneous
 
 - Arrays
 - Stacks
@@ -51,12 +35,9 @@ STACK : LIFO
 4. isEmpty
 5. isFull
 
--top
+- top
 
-STACK EXPRESSIONS:
-i.Infix expression
-ii.Prefix expression
-iii.Postfix expression
+STACK EXPRESSIONS: Infix expression, Prefix expression, Postfix expression
 
 ---
 
@@ -67,8 +48,7 @@ QUEUE : FIFO
 3. Priority queue
 4. Doubly ended queue
 
--rear
--front
+- rear, front
 
 ---
 
@@ -83,7 +63,7 @@ LINKED LIST :
 
 TREE :
 
-- Terms:
+TERMS:
 
 1. Node
 2.
@@ -94,12 +74,14 @@ TREE :
 ---
 
 Binary Search Tree
+
 BST Traversal methods:
-1)BFT : Breadth First Traversal
-2)DFT : Depth First Traversal -
-i. Inorder Traversal
-ii.Preorder Traversal
-iii.Postorder Traversal
+
+- BFT : Breadth First Traversal
+- DFT : Depth First Traversal:
+  1. Inorder Traversal
+  2. Preorder Traversal
+  3. Postorder Traversal
 
 ---
 
@@ -114,8 +96,8 @@ GRAPH :
 - Formulae:
 - Graph Traversal algorithms:
 
-1. BFS(Breadth First Search)
-2. DFS(Depth First Search)
+1. BFS (Breadth First Search)
+2. DFS (Depth First Search)
 
 ---
 
@@ -123,15 +105,9 @@ TEMPELATE, STANDARD TEMPELATE LIBRARY(STL), CONTAINER, ADAPTER, ITERATOR, VECTOR
 
 ---
 
-Algorithms:
-
-1.
-2.
-3.
-
 Array algorithms:
 
-- Sorting:
+Sorting:
 
 1. Selection sort
 2. Insertion sort
@@ -144,7 +120,7 @@ Array algorithms:
 9. Heap sort
 10. Tim sort
 
-- Searching:
+Searching:
 
 1. Linear search (recursive)
 2. Linear search (iterative)
@@ -164,12 +140,12 @@ Algorithms for minimal spanning tree:
 ---
 
 Concepts:
-1.Structures
-2.Increment and decrement operators : Pre-increment, Post-increment, Pre-decrement, Post-decrement
 
-- Asymptotic Notation : Big O
-- Complexity of algorithm: (Best case, worst case, average case): Time complexity & Space complexity
-  3.Hashing
-  4.Dynamic memory allocation to data structures
+1. Structures
+2. Increment and decrement operators : Pre-increment, Post-increment, Pre-decrement, Post-decrement
+3. Asymptotic Notation : Big O
+4. Complexity of algorithm: (Best case, worst case, average case): Time complexity & Space complexity
+5. Hashing
+6. Dynamic memory allocation to data structures
 
 ---

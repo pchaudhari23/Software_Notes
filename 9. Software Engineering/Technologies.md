@@ -78,3 +78,13 @@ Mobile Application tools:
 2. Vysor
 
 ---
+
+1. Wordpress
+2. Joomla
+3. Shopify
+4. Magento
+5. Hostinger
+6. GoDaddy
+7. Cloudflare
+
+---
