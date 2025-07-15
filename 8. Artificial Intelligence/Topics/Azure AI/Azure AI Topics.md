@@ -92,43 +92,143 @@ Generative AI:
 - Implement Retrieval Augmented Generation (RAG) with Azure OpenAI service
 - Fundamentals of Responsible Generative AI
 
-================================================================================================================
+---
 
-FUNDAMENTALS:
+Azure AI Foundry/ Azure AI Studio:
 
-Microsoft Azure AI Fundamentals: AI Overview:
+- AI Agents
+- Prompt flow
+- Foundry model catalog
+
+---
+
+**FUNDAMENTALS: NEW (2025)**
+
+**Introduction to AI concepts:**
+
+1. Introduction to AI
+2. Generative AI
+3. Computer vision
+4. Speech
+5. Natural language processing
+6. Extract data and insights
+7. Responsible AI
+
+**Introduction to machine learning concepts:**
+
+1. What is machine learning?
+2. Types of machine learning
+3. Regression
+4. Binary classification
+5. Multiclass classification
+6. Clustering
+7. Deep learning
+8. Transformers
+
+**Get started with machine learning in Azure:**
+
+1. Define the problem
+2. Get and prepare data
+3. Train the model
+4. Use Azure Machine Learning studio
+5. Integrate a model
+
+**Introduction to generative AI concepts**:
+
+1. What is generative AI?
+2. How do language models work?
+3. Understand how transformers advance language models
+4. Understand differences in language models
+5. Improve prompt results
+6. Create responsible generative AI solutions
+
+**Get started with generative AI in Azure:**
+
+1. Understand generative AI applications
+2. Understand tools to develop generative AI
+3. Understand Azure AI Foundry's model catalog
+4. Understand Azure AI Foundry capabilities
+5. Understand observability
+
+**Introduction to natural language processing concepts:**
+
+1. Understand how language is processed
+2. Understand statistical techniques for NLP
+3. Understand semantic language models
+
+**Get started with natural language processing in Azure:**
+
+1. Understand natural language processing on Azure
+2. Understand Azure AI Language's text analysis capabilities
+3. Azure AI Language's conversational AI capabilities
+4. Azure AI Translator capabilities
+5. Get started in Azure AI Foundry
+
+**Get started with speech in Azure:**
+
+1. Understand speech recognition and synthesis
+2. Get started with speech on Azure
+3. Use Azure AI Speech
+
+**Introduction to computer vision concepts**:
+
+1. Overview
+2. Understand image processing
+3. Machine learning for computer vision
+4. Understand modern vision models
+
+**Get started with computer vision in Azure:**
+
+1. Understand Azure AI services for computer vision
+2. Understand Azure AI Vision Image Analysis capabilities
+3. Understand Azure AI Vision's Face service capabilities
+4. Get started in Azure AI Foundry portal
+
+**Introduction to AI-powered information extraction concepts:**
+
+1. Overview
+2. Understand the extraction of data from images
+3. Understand the extraction of data from forms
+4. Understand multimodal data extraction
+5. Understand data extraction for knowledge mining
+
+**Get started with AI-powered information extraction in Azure:**
+
+1. Azure AI services for information extraction
+2. Extract information with Azure AI Vision
+3. Extract multimodal information with Azure AI Content Understanding
+4. Extract information from forms with Azure AI Document Intelligence
+5. Create a knowledge mining solution with Azure AI Search
+
+---
+
+**FUNDAMENTALS: OLD (2024)**
+
+**Microsoft Azure AI Fundamentals: AI Overview:**
 
 1. Fundamental AI Concepts
 2. Fundamentals of Machine Learning
 3. Fundamentals of Azure AI services
 
----
-
-Microsoft Azure AI Fundamentals: Computer Vision:
+**Microsoft Azure AI Fundamentals: Computer Vision:**
 
 1. Fundamentals of Computer Vison
 2. Fundamentals of Facial Recognition
 3. Fundamentals of Optical Character Recognition
 
----
-
-Microsoft Azure AI Fundamentals: Natural Language Processing:
+**Microsoft Azure AI Fundamentals: Natural Language Processing:**
 
 1. Fundamentals of text analysis with the Language Service
 2. Fundamentals of question answering with the Language Service
 3. Fundamentals of conversational language understanding
 4. Fundamentals of Azure AI Speech
 
----
-
-Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining:
+**Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining:**
 
 1. Fundamentals of Azure AI Document Intelligence
 2. Fundamentals of Knowledge Mining and Azure AI search
 
----
-
-Microsoft Azure AI Fundamentals: Generative AI:
+**Microsoft Azure AI Fundamentals: Generative AI:**
 
 1. Fundamentals of Generative AI
 2. Fundamentals of Azure OpenAI service
@@ -136,9 +236,9 @@ Microsoft Azure AI Fundamentals: Generative AI:
 
 ---
 
-ASSOCIATE:
+**ASSOCIATE:**
 
-Get started with Azure AI Services:
+**Get started with Azure AI Services:**
 
 1. Prepare to develop AI solutions on Azure
 2. Create and consume Azure AI services
@@ -149,7 +249,7 @@ Get started with Azure AI Services:
 
 ---
 
-Develop generative AI apps in Azure - NEW
+**Develop generative AI apps in Azure - NEW**
 
 1. Plan and prepare to develop AI solutions on Azure
 2. Choose and deploy models from the model catalog in Azure AI Foundry portal
@@ -162,7 +262,7 @@ Develop generative AI apps in Azure - NEW
 
 ---
 
-Develop AI agents on Azure - NEW
+**Develop AI agents on Azure - NEW**
 
 1. Get started with AI agent development on Azure
 2. Develop an AI agent with Azure AI Foundry Agent Service
@@ -172,7 +272,7 @@ Develop AI agents on Azure - NEW
 
 ---
 
-Develop natural language solutions in Azure:
+**Develop natural language solutions in Azure:**
 
 1. Analyze text with Azure AI Language
 2. Create question answering solutions with Azure AI Language
@@ -186,7 +286,7 @@ Develop natural language solutions in Azure:
 
 ---
 
-Develop computer vision solutions in Azure:
+**Develop computer vision solutions in Azure:**
 
 1. Analyze images
 2. Classify images
@@ -200,7 +300,7 @@ Develop computer vision solutions in Azure:
 
 ---
 
-Develop AI information extraction solutions in Azure: NEW
+**Develop AI information extraction solutions in Azure: NEW**
 
 1. Create a multimodal analysis solution with Azure AI Content understanding
 2. Create an Azure AI Content understanding client application
@@ -210,7 +310,7 @@ Develop AI information extraction solutions in Azure: NEW
 
 ---
 
-Implement knowledge mining with Azure AI Search: OLD
+**Implement knowledge mining with Azure AI Search: OLD**
 
 1. Create an Azure AI search solution
 2. Create a custom skill for Azure AI search
@@ -225,7 +325,7 @@ Implement knowledge mining with Azure AI Search: OLD
 
 ---
 
-Develop solutions with Azure AI Document Intelligence: OLD
+**Develop solutions with Azure AI Document Intelligence: OLD**
 
 1. Plan an Azure AI document intelligence solution
 2. Use prebuilt form recognizer models
@@ -235,7 +335,7 @@ Develop solutions with Azure AI Document Intelligence: OLD
 
 ---
 
-Develop Generative AI solutions with Azure OpenAI Service: OLD
+**Develop Generative AI solutions with Azure OpenAI Service: OLD**
 
 1. Get started with Azure OpenAI service
 2. Build natural language solutions with Azure OpenAI service

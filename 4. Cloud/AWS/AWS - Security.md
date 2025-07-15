@@ -6,19 +6,11 @@ What is a cryptographic key?
 
 ---
 
-What are symmetric and asymmetric keys?
-Symmetric Encryption:
+TYPES OF ENCRYPTION
 
-- Same key is used for encryption and decryption
+Symmetric Encryption: Same key is used for encryption and decryption
 
-Asymmetric Encryption:
-
-- Two keys - Public key and private key
-- Public key - Encrypt the data
-- Private key - Decrypt the data
-- Public key can be made available to multiple users i.e it is public. But the data cannot be decrypted without a private key.
-- Private key - Used to decrypt the data. Private key is kept with only the receiver. Not shared with anyone. Public key cannot decrypt the data in asymmetric encryption, only private key can.
-- E.g: RSA (Rivest-Shamir-Adleman) is asymmetric encryption algorithm.
+Asymmetric Encryption: Two keys - Public key and private key
 
 ---
 
@@ -46,7 +38,7 @@ Online key generation and encryption:
 What is encoding vs encrypting?
 Encoding:
 
-- Used to convinently transfer data across computers in such a format that it can be easily used by different types of systems.
+- Used to convinently transfer data across computers in such a format that it can be easily used by different types of systems. Convert data into some common format.
 - Does not use any key. Just an encoding algorithm.
 - Less secure
 - Eg: ASCII, UNICODE, URL Encoding,Base64 encoding

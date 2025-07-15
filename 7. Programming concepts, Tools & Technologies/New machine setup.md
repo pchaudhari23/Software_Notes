@@ -32,7 +32,7 @@ Compilers:
 
 Shadowbox tools:
 
-1. Filezilla
+1. Filezilla/ WinSCP
 2. 1Password
 3. Winmerge
 4. Slack

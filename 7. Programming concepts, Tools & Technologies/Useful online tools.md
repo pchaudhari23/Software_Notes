@@ -19,7 +19,7 @@ JSON Tools:
 
 ---
 
-1. Filezilla: Used to access files via SSH/ sFTP
+1. Filezilla/WinSCP: Used to access files via SSH/ sFTP
 2. WinMerge: Used to compare two folder repos. Used for deployments
 3. Mockaroo: Used to generate real data - Generate JSON to use it in projects
 

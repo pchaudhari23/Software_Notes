@@ -41,3 +41,13 @@ JIRA:
 - Close the story on JIRA after the PR is merged in main branch
 
 ---
+
+Task lifecycle:
+
+1. Ticket assigned to dev on JIRA
+2. Analyse the task, prepare estimate and timeline if big task or change request
+3. Create Timelines/ Estimates for the task: Sr. no., Task, Total Man Days, Start date, End date, Status. Keep some buffer time in between, any schedule or plan must be flexible enough. Release if early completed.
+4. Do testing
+5. Code reviewed and MR merged by team lead
+
+---

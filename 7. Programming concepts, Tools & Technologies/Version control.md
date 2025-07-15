@@ -262,8 +262,56 @@ GIT MERGE in main before raising PR:
 
 ---
 
+BUFFER THINGS:
+
+Git:
+
+- git stash clear: clear all stash
+- git stash: stash changes
+- git stash apply: pop the stash
+- commit delta changes
+- using vs code git:...
+- Draft PR - PR which is just made and not to be merged yet. Work is still in progress
+- PR comments - do changes and also reply to comments. replying is also important
+
 MERGE & DEPLOYMENT PROCESS:
 
 dev branch is merged into test and test branch is merged into prod after respective testing
 
 For some user story, multiple developers work on the same branch.
+
+After PR is merged => Jenkins automated pipeline triggered => new build created and deployed on dev instance
+
+- Production deployments are done by DevOps member.
+- DevOps person co-ordinates with the developer of the feature to push the code changes from dev branch to production branch.
+- Use Filezilla/ WinSCP for transferring file between local and remote computer. Useful for managing build.
+- Deploy on NitorAWS - code pushed on develop branch
+- Deploy on UAT - code pushed on UAT branch
+- Deploy on production - code pushed on prod branch
+
+Dev => Unit testing => Merge, build and deploy on Dev server => QA on dev server by dev => Merge, build and deploy on UAT server => QA on production => Merge, build and deploy on production server => QA on production => UAT on production => QC on production => Assign to CS team to verify with the client
+
+Dev => QA => QC => CS Team => Client
+
+---
+
+WINMERGE:
+
+- Used to compare the same folder/ repo but two different branches.
+- Left panel contains code from dev branch.
+- Right panel contains code from UAT branch.
+- Compare a particular file. If the code changes made by the developer are regarding the ticket being deployed, shift the snippet from left to right.
+- Sometimes both files are made completely identical i.e. whole file is shifted from left to right.
+- Sometimes small snippets are shifted. Sometimes new files are added.
+- Then commit and push on the UAT branch. And raise merge request.
+
+Deployment Steps:
+
+1. Take pull of the repo in a folder and switch to dev branch.
+2. Take pull of same repo in another folder and switch to UAT branch.
+3. Open the two folders in WinMerge tool to compare them.
+4. Confirm with the developer about the code changes made in dev branch and the push the code changes in UAT branch.
+5. Raise a merge request to merge UAT branch into prod branch.
+6. Once approved UAT is merged into prod branch. UAT and prod branches are always in sync.
+
+---

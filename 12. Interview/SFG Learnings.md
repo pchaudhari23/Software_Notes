@@ -1,31 +1,26 @@
-Exploring the codebase. Spending time daily - 30 min
-1.b2bi-ui-shared
-i.packages - build-lib - login - sample-app
-
-2.gatewayui
-i.sfg-sanity-test
-ii.sfg-ui
-
-- craco config contains package aliases
-- babel.config.js: file used for javascript compiler babel so that modern javascript can be used on current/old browsers
+**INTERNATIONALIZATION (i18n), LOCALIZATION (l10n):**
 
 ---
 
-- Uses monorepo architecture
-- uses yarn workspaces and turborepo build system
+**ACCESSIBILITY (a11y):** Playwright + Axe core
 
 ---
+
+**HOCs, App:**
 
 Snippets:
+
+```javascript
 const { page } = Shell.usePage(
 [],
 (function Page(pageUtil) {
-return {
-// model, form, datasources, datatable, ui, observers, init, functions ... etc
-})(pageUtil)
+	return {
+		// model, form, datasources, datatable, ui, observers, init, functions ... etc
+	})(pageUtil)
 );
 
 const pageConfig = {}
+```
 
 JSX:
 Shell.Page
@@ -33,35 +28,74 @@ Shell.PageHeader => title, description
 Shell.PageBody => CDS.Form => Grid
 Shell.PageActions
 
-CDS:
+---
+
+**AUTHENTICATION:**
+
+- OIDC
+- What is identity server?
+- What is liberty server?
 
 ---
 
-React hook form:
+**ROUTING:**
 
 ---
 
-Shell:
+**CDS:**
 
 ---
 
-E2E testing, BDD, Playwright & Cucumber:
-
-- FVT
+**REACT FORMS:**
 
 ---
 
-Storybook:
+**BDD:**
 
 ---
 
-CRACO:
+**MONOREPO:**
+
+- Turborepo build system and Yarn workspaces
+- Turborepo - turbo.json - only in b2bi shared
+- Turborepo - Build system for monorepo application
+- b2bi-ui-shared => packages - build-lib - login - sample-app
+- gatewayui => i.sfg-sanity-test, ii.sfg-ui
 
 ---
 
-Checkmarx, security scans, Blackduck scan:
+**SHELL:**
 
 ---
+
+**CRACO:**
+
+- craco config contains package aliases
+- babel.config.js: file used for javascript compiler babel so that modern javascript can be used on current/old browsers
+
+---
+
+**BUILD, DEPLOYMENT:**
+
+---
+
+**BLACKDUCK:**
+
+---
+
+**CHECKMARX:**
+
+---
+
+**STORYBOOK:**
+
+---
+
+**MISC:**
+
+---
+
+Exploring the codebase. Spending time daily - 30 min
 
 - File or folder?
 - Markdown or notion?
