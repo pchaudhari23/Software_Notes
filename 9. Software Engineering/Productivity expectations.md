@@ -1,3 +1,19 @@
+WORK:
+
+- Set weekly target: No. of stories / No. of weeks in sprint
+- Create subtasks immidiately under the story - What is the scope of this story? What are the things I need to implement as a part of this story?
+
+HIGHER MANAGEMENT:
+
+- Commits are tracked, PRs are tracked, the timestamp when we open, close and change status of JIRAs are tracked. Everything is monitored.
+- At sprint end the report is generated, audit is done. And there if some gap is observed then questions and justifications are asked.
+
+---
+
+LEARNING:
+
+---
+
 1. Work
 2. Learning
 3. Other (Project, practice, preparation etc) - Can plan on only weekends or holidays as well

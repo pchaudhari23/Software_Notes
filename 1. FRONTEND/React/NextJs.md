@@ -18,6 +18,8 @@ CSR or SSR:
 - Nested route - Folder within folder
 - Dynamic route - Folder name with square brackets
 
+Hydration: Attaching event listeners and internal state to HTML is rendered from server in SSR.
+
 Full stack applications: API routes - route.js
 
 Data fetching

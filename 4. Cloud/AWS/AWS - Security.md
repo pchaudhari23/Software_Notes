@@ -38,9 +38,10 @@ Online key generation and encryption:
 What is encoding vs encrypting?
 Encoding:
 
-- Used to convinently transfer data across computers in such a format that it can be easily used by different types of systems. Convert data into some common format.
+- Converting data from one format to another.
+- Used to convinently transfer data across computers in a format that it can be easily used by different types of systems.
 - Does not use any key. Just an encoding algorithm.
-- Less secure
+- Not secure
 - Eg: ASCII, UNICODE, URL Encoding,Base64 encoding
 
 Encrypting:
@@ -117,7 +118,9 @@ APIs:
 2. What is hashing?
 
 - Hashing is a one-way process that converts a password to ciphertext using hash functions or algorithms.
-- Hashes of passwords cannot be transformed back to the original plaintext password.
+- It creates a unique fixed length string or hash.
+- Hashes of passwords are one way. They cannot be transformed back to the original plaintext password.
+- Even tiny change in file or data changes the hash completely. This is useful to check if data is tampered or not.
 - Server never stores password, it stores hash of the password.
 - While login, the server calculates hash of the entered password and compares it with hash stored on server. If both hashes are equal, user is logged in sucessfully.
 

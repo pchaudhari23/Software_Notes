@@ -1,3 +1,42 @@
+PRIMARY:
+
+1. HTML, CSS
+2. JavaScript
+3. TypeScript
+4. React
+   - UI Library:
+     - CDS
+     - MUI
+   - Forms:
+     - Formik, Yup
+     - React hook forms
+   - State management:
+     - Provider, Context
+     - Redux, redux toolkit, redux saga
+   - Testing:
+     - Unit testing: Jest, react testing library
+     - BDD, FVT Automation: Cucumber, playwright
+   - i18n, l10n, a11y
+   - axios
+   - routing
+5. Frontend
+   - Authentication, authorisation
+6. Node
+7. Express
+8. MongoDB
+
+SECONDARY:
+
+1. Next JS
+2. Flutter, Dart
+3. AWS
+4. Azure AI
+5. Docker
+6. Kubernetes
+7. Jenkins
+
+---
+
 REACT:
 
 - Solve the practice problems in react docs. Can't read the documentation again, so skim the page quickly, read recap part.
