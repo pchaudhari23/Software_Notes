@@ -1,17 +1,18 @@
 CLOUD COMPUTING:
 
-1. Basic
-2. Compute
+1. Core cloud & AWS fundamentals
+2. Compute / VM
 3. Database
 4. Storage
-5. Containerization
-6. Deployment
-7. CICD
-8. Monitoring
+5. Containerization & Orchestration
+6. Deployment & Infrastructure as a Code
+7. CICD & DevOps tools
+8. Monitoring, Troubleshooting & Audit
 9. Integration & messaging
-10. Serverless
-11. Security
-12. Miscelleneous
+10. Networking & DNS
+11. Serverless
+12. Security & Encryption
+13. Miscellaneous / Specialized Services
 
 ---
 

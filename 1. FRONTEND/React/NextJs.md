@@ -1,3 +1,5 @@
+NEXT JS: It is a react framework for building full stack web applications.
+
 FEATURES:
 
 1. Server side rendering
@@ -18,7 +20,7 @@ CSR or SSR:
 - Nested route - Folder within folder
 - Dynamic route - Folder name with square brackets
 
-Hydration: Attaching event listeners and internal state to HTML is rendered from server in SSR.
+Hydration: Adding interactivity to the page. Attaching event listeners and internal state to HTML is rendered from server in SSR.
 
 Full stack applications: API routes - route.js
 
