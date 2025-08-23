@@ -6,6 +6,7 @@ WORK:
 HIGHER MANAGEMENT:
 
 - Commits are tracked, PRs are tracked, the timestamp when we open, close and change status of JIRAs are tracked. Everything is monitored.
+- How it is tracked? The JIRA ticket number must be mentioned in the commit message. From there it is connected to PR. In JIRA ticket, under development dropdown in side panel, the branch and commits are mentioned.
 - At sprint end the report is generated, audit is done. And there if some gap is observed then questions and justifications are asked.
 
 ---
