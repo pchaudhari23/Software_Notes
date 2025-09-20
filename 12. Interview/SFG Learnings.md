@@ -13,14 +13,25 @@ Snippets:
 ```javascript
 const { page } = Shell.usePage(
 [],
-(function Page(pageUtil) {
-	return {
-		// model, form, datasources, datatable, ui, observers, init, functions ... etc
-	})(pageUtil)
+(function Page(pageArgs, pageUtil) {
+  return {
+    model: { ... },
+    form: { ... },
+    datasources: { ... },
+    observers: [ ... ],
+    ui:{...}
+    init: function () { ... },
+    customFunction: function () { ... }
+  };
+})(pageArgs, pageUtil)
 );
 
 const pageConfig = {}
 ```
+
+usePage:
+
+- This is a custom hook. It contains an IIFE (Immidiately invoked function expression). Returns a page object. The form, model objects can be used from page.
 
 JSX:
 Shell.Page

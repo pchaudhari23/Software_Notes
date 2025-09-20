@@ -20,6 +20,7 @@ Meetings:
 1. Sprint demo - At end of sprint - to client or project stakeholders
 2. Sprint review meeting
 3. Sprint retrospective - after sprints - 1.what went well? 2.what didn't go well? 3.what could have been done better?
+4. Backlog story grooming
 
 ---
 
@@ -49,5 +50,23 @@ Task lifecycle:
 3. Create Timelines/ Estimates for the task: Sr. no., Task, Total Man Days, Start date, End date, Status. Keep some buffer time in between, any schedule or plan must be flexible enough. Release if early completed.
 4. Do testing
 5. Code reviewed and MR merged by team lead
+
+---
+
+CLIENT DEMO:
+
+Hello everyone, good morning and good evening! I am Pritam. Today I will demo the.....
+
+After demo: Any questions or feedback?
+
+Q&A:
+
+- I have noted it will correct this later.
+- Sure Jhon, Thank you for the feedback. Will
+
+If something breaks:
+
+- Not sure why this
+- Will check this later
 
 ---
