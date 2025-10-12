@@ -153,3 +153,5 @@ Modelling - we need to define datatype explicitly in typescript. Javascript infe
   Type safety means the is no need to use generics datatype like Object or any or base datatype` but specific datatype eg: Customer object
 
 ---
+
+TIPS & TRICKS:

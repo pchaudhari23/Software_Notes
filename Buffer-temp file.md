@@ -162,3 +162,5 @@ RBAC:
 - Backend - API errors - Throw meaningful messages for API errors, send exceptions, error code and relevant message in response.
 - Developer testing - Manual testing, automation testing
 - UI Tasks - UX Handoff, UI development, API integration, Testing
+- Agentic AI
+- Vibe codeing: Develop software using AI by just giving prompts and checking
