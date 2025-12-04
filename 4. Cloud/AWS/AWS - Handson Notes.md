@@ -1,3 +1,10 @@
+PRACTICAL QUESTIONS:
+
+- How to SSH inan EC2 instance?
+- How to write AWS Lambda in IDE like VS Code?
+
+---
+
 1. Create an EC2 instance and SSH into it. Create Security group rules to allow custom TCP port.
 2. Install necessary dependencies
 3. Take clone of repo, enter the repo and install deps and create build

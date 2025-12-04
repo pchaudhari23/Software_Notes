@@ -31,6 +31,8 @@ Regression testing: Done to check if fix does not break existing
 Sanity testing:
 Unit Testing - Test a feature before releasing to QA. Fixing a bug or developin a feature should not break something else.
 
+Developer testing - Manual testing, automation testing
+
 RTM:Requirements Traceability Matrix - Used for testing
 
 QA shares the test plan while development is in progress

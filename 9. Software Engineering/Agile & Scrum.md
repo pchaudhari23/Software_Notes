@@ -31,6 +31,7 @@ User story:
 - User story => Story points => Fibonacci numbers
 - For larger stories => split the ticket into two fibonnaci numbers
 - Split a user story: 3 sub tasks - UI implementation, API integration, Testing
+- UI Tasks - UX Handoff, UI development, API integration, Testing
 - Add acceptance criteria, title should be in format - As a end user I should be ablt to....
 
 JIRA:

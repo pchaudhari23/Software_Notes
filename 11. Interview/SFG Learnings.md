@@ -81,7 +81,7 @@ Shell.PageActions
 
 **CRACO:**
 
-- craco config contains package aliases
+- craco config contains package aliases - Connecting b2bi-shared to sfg repo
 - babel.config.js: file used for javascript compiler babel so that modern javascript can be used on current/old browsers
 
 ---

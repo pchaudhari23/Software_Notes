@@ -55,3 +55,19 @@ DEMO CODE: Interviewer shows a code and asks
 - He wants to check whether you understand the question or not.
 
 ---
+
+https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
+
+Performance:
+Use memoization
+Debouncing
+Lazy loading
+
+Error handling:
+Error boundaries
+try/catch
+
+Security:
+HTTPs
+
+---

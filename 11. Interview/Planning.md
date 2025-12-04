@@ -1,3 +1,55 @@
+CODE:
+
+1. Arrays
+2. Objects
+3. Strings, regex
+4. Array of objects
+5. Collections
+6. Math
+7. Date
+8. Asynchronous code
+9. OOPs
+10. TypeScript
+11. React interview
+12. React docs exercises
+13. React forms 1
+14. React forms 2
+15. React testing 1
+16. React testing 2
+17. i18n
+18. a11y
+19. Error handling
+20. Node
+21. Express
+22. MongoDB
+
+---
+
+CONCEPTS:
+
+1. Javascript - Hoisting
+2. Javascript - Closures
+3. Javascript -
+4. Javascript -
+5. Javascript -
+6. React 19
+7. HOC
+8. CSR/SSR/ISR/ISG
+9. Build process & tools
+10. Prop drilling & State lifting
+11. React -
+12. React -
+13. Redux
+14. Redux toolkit
+15. Redux Saga
+16. React -
+17. React -
+18. React -
+19. React -
+20. React -
+
+---
+
 PRIMARY:
 
 1. HTML, CSS

@@ -56,3 +56,23 @@ Jenkins and Continuous Delivery
 - Jfrog
 - Artifact repository
 -
+
+---
+
+JENKINS:
+
+- I have a react application. Its hosted on github. I also have a netlify and jenkins account. I want to craete a pipeline such that when ever i merge something in main branch, it should trigger a build and deploy on netlify. Note: Jenkins server is in AWS EC2
+
+Jenkins script understanding STEPS:
+
+- Change to the root user after logging in
+- Add the Jenkins debian repo to the aptitude sources list
+- Configure Jenkins and plugins
+- Configure nginx
+- Update the source lists and upgrade any out of date packages
+- Install the software for the Jenkins master: openjdk-11-jdk, nginx
+- Then install jenkins
+- Confirm that jenkins and nginx are installed
+- Retrieve the inital admin password
+
+---

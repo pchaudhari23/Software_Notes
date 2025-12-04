@@ -205,4 +205,6 @@ Interview question:
 AWS: Learn CLI commands and know some sdk libraries - for lambda etc...
 3 Ways to interact with any cloud platform: 1.Web console, 2.CLI, 3.SDK, 4.REST API(Azure)
 
+Pub sub architecture - usually for event driven apps
+
 ---
