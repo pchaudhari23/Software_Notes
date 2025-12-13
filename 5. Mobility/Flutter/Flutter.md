@@ -1,3 +1,32 @@
+FLUTTER:
+
+- Flutter is an **open source SDK** developed by **Google**.
+- Used to build **natively compiled** applications (compiled to **ARM,** **x86** and **JavaScript** for the web).
+- Used to develop **multi platform applications**: Mostly mobile applications but also web, desktop and embedded application.
+- It uses **Dart programming language** and **single code base** is used for developing applications.
+- It allows **fast development** due to **hot reload** and **hot restart** features.
+- It offers **high performance** due to its **Impeller rendering engine** and **Ahead of time compilation**.
+- Provides rich and beautiful widgets for ui - **Material Design widgets** (Android-style) and **Cupertino widgets** (iOS-style).
+- It has **rich ecosystem** where **pub.dev** provides lots of **plugins and packages**.
+- Current version: v3.x (Dec 2025).
+
+---
+
+DART:
+
+- **Dart** is a **open source**, **object-oriented programming language** created by **Google.**
+- Its used to build **fast, scalable apps** for **multiple platforms** like mobile, desktop and web. Mainly used in **Flutter**.
+- Syntax is similar to **C++, C#, Java**.
+- **Strongly typed**, with **type inference** (var), and optional dynamic typing.
+- **Null safety** — eliminates null reference errors with compile-time checks.
+- **Asynchronous programming** using: **async/await, Futures, Streams**
+- **Garbage collected** , memory-managed language.
+- Supports **JIT compilation** during **development**. So dart code is compiled on the fly using Dart VM making the hot reload possible.
+- Supports **AOT compilation** in **production build** to compile to native machine code for maximum performance.
+- Current version: v3.x (Dec 2025).
+
+---
+
 Android studio:
 SDK Manager - Android SDKs
 AVD Manager - Android Virtual Devices
@@ -84,16 +113,16 @@ class MyWidget extends StatefulWidget {
 const MyWidget({super.key});
 
 @override
-State<MyWidget> createState() {
+State `<MyWidget>` createState() {
 return \_MyWidgetState();
 }
 OR
 
 @override
-State<MyWidget> createState() => \_MyWidgetState();
+State `<MyWidget>` createState() => \_MyWidgetState();
 }
 
-class \_MyWidgetState extends State<MyWidget> {
+class \_MyWidgetState extends State `<MyWidget>` {
 
 int \_stateVariable = 0;
 

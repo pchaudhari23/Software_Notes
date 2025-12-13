@@ -14,7 +14,8 @@ Axios interceptors - use or eject
 2. Response interceptor: Called after receiving response.
    axiosInstance.interceptors.response.use()
 
-```
+```javascript
+
 // Handle request process
 axiosInstance.interceptors.request.use(
 request => requestHandler(request)
@@ -29,6 +30,5 @@ error => errorHandler(error),
 ```
 
 - use() - function takes two functions arguments.
-
 - success handler: function to handle success: argument - config object in request interceptor to modify request OR response object in response interceptor to modify response
 - failure handler: function to handle the errors

@@ -4,7 +4,7 @@ run a file in IDE - run 'python filename.py' in terminal
 
 Check version: py -3 --version, pip3 --version
 
-Cntrl + ` -> Open existing closed terminal, Cntrl + Shift + ` -> Open new terminal
+Cntrl + ` => Open existing closed terminal, Cntrl + Shift + ` => Open new terminal
 
 Features:
 1.Interpreted - Executed line by line.
@@ -39,7 +39,7 @@ from datetime import date
 print(date.today())
 ---------------------------------------------------------
 Command line arguments: arguments given in cli before running the code in a file.
-Eg: program.py 12 87 -> sys.argv[0] = program.py, sys.argv[1] = 12
+Eg: program.py 12 87 => sys.argv[0] = program.py, sys.argv[1] = 12
 
 import sys
 

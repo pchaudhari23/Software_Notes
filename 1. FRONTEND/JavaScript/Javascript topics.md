@@ -5,11 +5,11 @@ Basic:
 3. Type coercion in javascript
 4. Type casting - converting an object of one datatype into another
 
-- parseInt(): string -> integer
-- parseFloat(): string -> float,
-- toString(): data -> string
-- JSON.parse(): String -> JSON
-- JSON.stringify(): JSON -> string
+- parseInt(): string => integer
+- parseFloat(): string => float,
+- toString(): data => string
+- JSON.parse(): String => JSON
+- JSON.stringify(): JSON => string
 
 5. generic type, any, T
 6. null check in Javascript - ?.

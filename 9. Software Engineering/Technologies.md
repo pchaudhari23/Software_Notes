@@ -7,7 +7,7 @@ FRONTEND TECHNOLOGIES:
 1. HTML 5
 2. CSS 3
 3. Bootstrap 3/4
-4. Javascript -> Jquery -> AJAX call, JSON, XML
+4. Javascript => Jquery => AJAX call, JSON, XML
 5. Typescript
 
 ---

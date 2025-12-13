@@ -1,9 +1,25 @@
 PERSONAL INTERVIEW:
-• Before Job application: Preparation of Resume
 
-• Before going to the interview
-• During the interview
-• After the interview
+Before Job Application:
+
+- Preparation of resume
+
+---
+
+Before interview:
+
+- JD check
+- Company information: its vision, its domains, its branches, key people, bit of history, today's position etc.
+
+---
+
+During interview:
+
+---
+
+After interview:
+
+---
 
 Before interview:
 
@@ -48,13 +64,8 @@ Before interview:
 ---
 
 - Technical interview: Subject knowledge
-
----
-
+- HR interview: Thought process
 - General awareness’s questions: Current affairs
-
----
-
 - Puzzle type questions, situation based questions, tricky questions.
 
 ---
@@ -110,11 +121,5 @@ So Nitor is my first company. I joined here in December 2019 through CDAC campus
 - Heard about a new technology or a new library. Picking up that new technology. Knowing where and how to use it. How I can use it to improve my projects.
 - The ability to read, understand and implement by referring to a documentation.
 - Mobile application development - Billions of users use mobile applications. More market than the desktop or web application which we develop.
-
-MBA:
-
-- 6 month / 8 month / 1 year post graduate diploma MBA course. Good institutions across world providing distance learning.
-- Thia MBA is not to change careers but to aid in existing career.
-- Not traditional 2 year full time college courses.
 
 ---

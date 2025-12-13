@@ -45,11 +45,9 @@ QA shares the test plan while development is in progress
 - Try out, install new softwares
 - Explore its features
 - Test it, find its limitations and bugs
-
----
-
-Exploring apps similar to what we are building.
-Testing and exploring the features of our competitor apps.
+- Exploring apps similar to what we are building
+- Testing and exploring the features of our competitor apps.
+- Testing application - Test on all platforms, browsers and mobile
 
 ---
 

@@ -14,8 +14,8 @@ DOM TRAVERSAL:
 
 1. document.getElementById('medications')
 2. document.querySelector("[data-type='generalInfo']")
-3. document.querySelector("#grandparent-id") -> to get element by id
-4. document.querySelector(".grandparent") -> to get element by class
+3. document.querySelector("#grandparent-id") => to get element by id
+4. document.querySelector(".grandparent") => to get element by class
 5. document.querySelector("[data-type='generalInfo']")
 6. document.querySelectorAll("[data-type='generalInfo']")
 7. Array.from(document.querySelectorAll("[data-type='generalInfo']")) - to get output in Array form
@@ -27,7 +27,7 @@ DOM TRAVERSAL:
 13. element.previousElementSibling
 14. const listItem = document.querySelector("li:last-child") - get last child, first child etc
 
-- document.querySelector("") -> [] for data attributes, . for class and # for id attributes
+- document.querySelector("") => [] for data attributes, . for class and # for id attributes
 
 ---
 

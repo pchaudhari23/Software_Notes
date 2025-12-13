@@ -1,48 +1,33 @@
-NEXT JS: It is a react framework for building full stack web applications.
+NEXT JS:
+
+- Next JS is a **react based full stack framework** developed by **Vercel** used to build **modern scalable applications**.
+- It has lot of **powerful features** and sometimes better than React in terms of performance, it has built-in routing, server-side rendering and API handling.
+- Supports **hybrid rendering** like **SSR, SSG**, and **ISR** for flexibility.
+- Uses the **App Router** with **file-based routing** for **simple navigation**.
+- Enables **Server Components** to improve performance and reduce bundle size.
+- Provides **built-in API Routes** to create backend endpoints easily.
+- Provides **font and image optimization** through built in components.
+- Includes **automatic code splitting** for faster page loads.
+- **Middleware** – Run logic before page load (auth, redirects).
+- Current version - (Dec 2025) Nextjs 15
+
+---
 
 FEATURES:
 
-1. Server side rendering
-2. File based routing system. So we can create folder structure as per the routes we want. It also supports nested routing and dynamic routing.
+1. Server side rendering: Default SSR. For CSR - add "use client" at the top. By moving rendering and data fetching to the server, you can reduce the amount of code sent to the client, which can improve your application's performance.
+2. File based routing system. So we can create folder structure as per the routes we want. It also supports nested routing and dynamic routing. Each folder in app directory is route. Nested route - Folder within folder, Dynamic route - Folder name with square brackets. API routes - route.js
 3. Typescript support
 4. Image optimization
 5. It allows us to create API routes
 6. Automatic code splitting
 7. Static site generation
 8. Incremental static regeneration
+9. SEO - Metatdata - Static metadata & Dynamic metadata
 
----
+SSR (Server Side Rendering): getServerSideProps
 
-CSR or SSR:
-
-- SSR - Rendering page before sending to client. Default SSR. For CSR - add "use client" at the top.
-- Routing: React - React router DOM, Next JS - File based routing system. Each folder in app directory is route.
-- Nested route - Folder within folder
-- Dynamic route - Folder name with square brackets
-
-Hydration: Adding interactivity to the page. Attaching event listeners and internal state to HTML is rendered from server in SSR.
-
-Full stack applications: API routes - route.js
-
-Data fetching
-
-- SSR
-- SSG - Static Site Generation
-- ISG - Incremental Static Generation
-- By moving rendering and data fetching to the server, you can reduce the amount of code sent to the client, which can improve your application's performance.
-- Automatic code splitting
-
----
-
-API routes - Express JS is required.
-Create API folder in app directory - route.js file
-
-SEO:
-
-- Metatdata - Static metadata & Dynamic metadata
-- TailwindCSS - Similar to bootstrap
-- Authentication - next-auth/react, nextAuth.js
-- Server Actions
+SSG (Static Site Generation): getStaticProps
 
 ---
 

@@ -1,4 +1,53 @@
-https://playcode.io/ - Javascript playground
+HOISTING:
+
+- It is a mechanism in which javascript moves all the function and variable declarations at the top of the scope before executing them.
+- If a variable is declared inside a function, its scope is limited to that function which means it cannot be accessed outside that function. If it is outside then it has global scope, it can be accessed anywhere.
+- var is function scoped, let and const are block scoped.
+- It doesnt work with let and const. It will give error that this is initialized before being declared.
+
+```javascript
+hoist();
+
+function hoist() {
+  console.log("In hoist");
+  console.log(x);
+  var x = 2;
+}
+
+console.log(y);
+var y = 5;
+
+function hoist2() {
+  console.log(a);
+  var a = "Hello";
+}
+
+hoist2();
+```
+
+---
+
+CLOSURE:
+
+- **Function nesting** is when a function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed out.
+- A **closure** is a function that retains access to variables from its **lexical scope** , even after the outer function has finished executing.
+
+```javascript
+function outer() {
+  var x = 2;
+  function inner() {
+    console.log(x);
+  }
+  inner();
+}
+
+outer();
+```
+
+---
+
+- Javascript playground: https://playcode.io/
+- Typescript: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
 
 Instead of many if else: use
 i.Ternary Operators
@@ -7,25 +56,31 @@ iii.Logical Operators (&& and ||)
 iv.Lookup Maps
 
 Lookup maps/lookup object: Eg:
+
+```javascript
 function checkBestStudent(subject) {
-var bestStudent = "";
-var lookup = {
-"maths": "Adams Milner",
-"english": "Akande Olalekan Toheeb",
-"chemistry": "Chicago",
-"physics": "Denver",
-"biology": "Easy"
-};
-bestStudent = lookup[subject];
-console.log(bestStudent);
+  var bestStudent = "";
+
+  var lookup = {
+    maths: "Adams Milner",
+    english: "Akande Olalekan Toheeb",
+    chemistry: "Chicago",
+    physics: "Denver",
+    biology: "Easy",
+  };
+
+  bestStudent = lookup[subject];
+  console.log(bestStudent);
 }
 
 checkBestStudent("maths");
+```
 
 ---
 
 - Implement a loop counter to avoid getting stuck into infinite loop. On exceeding a count number, take an action to break and come out of loop.
 - Store all the strings in a constants file and use constants wherever required.
+- Finding out which elements from one array belong to other array using some object property => Running loop over two arrays - No, Use filter and some
 
 ---
 
@@ -90,8 +145,8 @@ HTML String:
 
 HTML Document:
 
-1. HTML DOM -> HTML String
-2. HTML String -> HTML DOM
+1. HTML DOM => HTML String
+2. HTML String => HTML DOM
    const parser = new DOMParser();
    var HTMLDocumentDOM = parser.parseFromString(htmlString, "text/html");
 
@@ -106,7 +161,7 @@ BASE 64:
 - Encoded format of PDF, image, HTML page etc in the form of long string of characters.
 - Binary string: A representation of a file format (Eg: HTML, PDF, Image etc.) as a string of binary numbers.
 - Any media type with any extension can be converted to base64 and vice versa.
-- File <-> Binary string <-> Base64 <-> File
+- File <=> Binary string <=> Base64 <=> File
 
 btoa() - Binary string to Base 64
 atob() - Base 64 to Binary string
@@ -151,6 +206,7 @@ Modelling - we need to define datatype explicitly in typescript. Javascript infe
 - Create datatypes using interfaces in types folder
   Creating type interfaces will give type safety.
   Type safety means the is no need to use generics datatype like Object or any or base datatype` but specific datatype eg: Customer object
+- Entity: Business object. It's what we see in UI, what we send through API and store in DB. Entities are related to each other. Hence ER diagrams. Eg: Social media app: Post, Comment, User etc., Ecommerce app: Product, Cart, Orders, User etc.
 
 ---
 
