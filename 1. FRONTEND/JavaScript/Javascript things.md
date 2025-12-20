@@ -1,47 +1,71 @@
 HOISTING:
 
-- It is a mechanism in which javascript moves all the function and variable declarations at the top of the scope before executing them.
-- If a variable is declared inside a function, its scope is limited to that function which means it cannot be accessed outside that function. If it is outside then it has global scope, it can be accessed anywhere.
+- Hoisting is a JavaScript behavior where declarations of variables and functions are processed before code execution. During the memory allocation (creation phase), JavaScript allocates memory for variables and functions before executing the code.
+- If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
 - var is function scoped, let and const are block scoped.
-- It doesnt work with let and const. It will give error that this is initialized before being declared.
+- Only declarations are hoisted, not initializations.
+- var variables are hoisted and initialized with undefined.
+- let and const variables are hoisted but not initialized.
+- Hoisting does work with let and const, but they are placed in the Temporal Dead Zone (TDZ). The Temporal Dead Zone (TDZ) is the time between the start of a scope and the declaration of a let or const variable, during which accessing it throws a ReferenceError. Accessing them before their declaration results in a ReferenceError (not undefined).
 
 ```javascript
-hoist();
+1.var
+	console.log(a);
+	var a = 10;
+	Output: undefined
 
-function hoist() {
-  console.log("In hoist");
-  console.log(x);
-  var x = 2;
-}
+2.let/const
+	console.log(b);
+	let b = 20;
+	Output: ReferenceError: Cannot access 'b' before initialization
 
-console.log(y);
-var y = 5;
+3.Function declaration hoisting
+	sayHello();
 
-function hoist2() {
-  console.log(a);
-  var a = "Hello";
-}
+	function sayHello() {
+ 		console.log("Hello");
+	}
+	Output: Hello
 
-hoist2();
+4.Function expression with var
+	sayHi();
+
+	var sayHi = function () {
+ 		console.log("Hi");
+	};
+	Output: TypeError: sayHi is not a function
+
+5.Block scope (let)
+	{
+ 		console.log(x);
+ 		let x = 5;
+	}
+
+	Output: ReferenceError
 ```
 
 ---
 
 CLOSURE:
 
-- **Function nesting** is when a function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed out.
-- A **closure** is a function that retains access to variables from its **lexical scope** , even after the outer function has finished executing.
+- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
+- **Closure:** When the inner function is returned or used outside the outer function, allowing it to remember and access the outer function’s variables even after execution ends.
 
 ```javascript
 function outer() {
-  var x = 2;
-  function inner() {
-    console.log(x);
-  }
-  inner();
+  let count = 0; // variable in lexical scope
+
+  return function inner() {
+    count++; // inner remembers `count`
+    console.log(count);
+  };
 }
 
-outer();
+const counter = outer(); // outer() has finished executing
+
+counter(); // 1
+counter(); // 2
+counter(); // 3
 ```
 
 ---

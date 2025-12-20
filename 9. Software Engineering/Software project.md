@@ -2,8 +2,26 @@ SOFTWARE DEVELOPMENT:
 
 PRODUCT DESIGN, PRODUCT DEVELOPMENT
 
-SDLC - Software Development Lifecycle
-STLC - Software Testing Lifecycle
+**SDLC Stages: Software Development Lifecycle**
+
+1. Planning
+2. Requirement gathering & analysis
+3. System Design - System architecture, DB design, HLD, LLD, UI/UX mockups
+4. Implementation / Development
+5. Testing
+6. Deployment
+7. Maintenance
+
+**STLC Stages: Software Testing Lifecycle**
+
+1. Requirement Analysis
+2. Test Planning
+3. Test Case Design / Development
+4. Test Environment Setup
+5. Test Execution
+6. Test Cycle Closure
+
+SDLC & STLC both run in parallel in agile project. Dev and QA both get requirements at same time and they start their respective work.
 
 ENVIRONMENTS:
 
