@@ -105,6 +105,36 @@ import { TextInput as CDSTextInput } from "@carbon/react";
 
 ---
 
-RELATIVE PATH (from reference of the current file) and ABSOLUTE PATH (from root level)
+RELATIVE PATH (from reference of the current file):
+
+Eg:
+
+```javascript
+import "./login.styles.css";
+import AuthService from "../../services/auth.service.js";
+```
+
+ABSOLUTE PATH (from root level):
+
+Eg:
+
+```javascript
+import "src/components/login/login.styles.css";
+import AuthService from "src/services/auth.service.js";
+```
+
+---
+
+FILE NAME CONVENTION: instead of camel case filenames, use dot-separated / kebab-case filenames
+
+userModel.js => user.model.js
+
+orderService.js => order.service.js
+
+invoiceRepository.js => invoice.repository.js
+
+loginPage.jsx => login.page.jsx
+
+loginStyle.css => login.styles.css
 
 ---

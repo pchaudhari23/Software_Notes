@@ -93,6 +93,34 @@ REACT 19:
 
 ---
 
+React Starting point:
+
+```javascript
+// React <= 17:
+import ReactDOM from "react-dom";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+OR;
+// React 18+
+import { createRoot } from "react-dom/client";
+
+const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+HTML: <div id="root"></div>;
+```
+
+- Components: Dumb but reusable, gets data from prop & displays it.
+- Container: Smart - state management, data fetching, contains business logic.
+
+---
+
 ```javascript
 // rest in function signature in argument
 const MyComponent = ({ name, ...props }) => {
