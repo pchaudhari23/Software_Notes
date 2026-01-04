@@ -1,57 +1,3 @@
-DEBUGGING SKILLS:
-
-Basic debugging:
-
-- Breakpoints, debugger, console.log()
-- Trace the flow, how data is passed between functions
-- Search for keywords: current file, entire project
-- Trial and error: Isolate the issue
-- Reproduce the error
-- Minimize timewaste - focus on quickly reproducing the bug/defect/error
-
-Knowledge:
-
-- Search effectively: Learn to quickly google errors and find relevant solutions
-- Learning things quickly
-- Gain a strong understanding of the codebase: know how to explore and navigate a project repository.
-- Understand fundamental programming concepts, including data structures, loops, conditionals, and built-in methods.
-
-Thinking:
-
-- Debugging comes with practice
-- Debugging in mind: mentally trace and reason through your code before or during debugging
-- If its taking time, ask for help or work with team mates, because we have deadlines
-- Think calmly. Break the problem into smaller tasks. Think in steps. What I want? What steps I need to take to reach there?
-- Shifting the gears???
-
-Testing:
-
-- Testing the code regularly throughout the development process.
-- Ensure that new fixes or features do not introduce regression issues (i.e., breaking existing functionality).
-- Validate edge cases to ensure robustness and reliability.
-- Implementing complex or connected tasks or lot of scenarios - Make a list of scenarios/combinations or a matrix
-
-Error handling:
-
-- Learn how to identify and monitor component re-renders in React (e.g., using console.log() or React Developer Tools).
-- Understand and troubleshoot common JavaScript errors such as “cannot read property of undefined”, type errors, and reference errors.
-- Effective error handling techniques: null checks, optional chaining (?.), and default fallbacks (|| [], || {}).
-- List of the most frequent JavaScript and React errors to recognize and handle them gracefully.
-
-Code quality:
-
-- Follow best coding practices and write optimized, efficient code that minimizes unnecessary loops and complex conditions.
-- Improve coding productivity through effective workflows, tools, and habits.
-- Refactoring the code from time to time to maintain clarity, performance, and scalability.
-
-Misc:
-
-- Rebuild/restart project, clear the cache, hard refresh in browser
-- API Error: Before going to API team, check the API request body and endpoint URL, query and path parameters.
-- Environment Error: Something working on dev but not on prod? Check the environment variables, compare the code, compare the logs, find out the difference between them.
-
----
-
 SELF LEARNING:
 
 Daily: 1 or 2 hrs - 9 to 12 PM
@@ -66,6 +12,12 @@ Other: 1 hr
 - Explore the GitHub repo of any product or library. To know how company or open source technology works technically.
 - Upgrading dependencies/libraries during ongoing project? Usually we don't upgrade to latest versions immediately, we wait for it to become stable?
 - Developers and testers must understand business requirements first. That is the source of knowledge for both. If both are on the same page only then the project can happen otherwise there will be miscommunication and conflicts between devs and QA.
+
+Thoughts:
+
+1. Learn many things with decent knowledge but one thing with deep knowledge. Jack of all trades, master of one. Scale up and scale out.
+2. Is learning new things worth investing time, effort and money? What return does it give me in terms of salary?
+3. Or should I spend time honing and sharpening my known skills? Which of two is better use of time?
 
 ---
 
