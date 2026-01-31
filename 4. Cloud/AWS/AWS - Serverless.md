@@ -27,7 +27,7 @@ Cache-Control: max-age=0
 - JSON Schema - JSON-schema.org
   BODY MAPPING TEMPLATE:
 - $input: variable which gives request data (body, params...)
-- json():a method on $input which will retrieve a JSON representation of the data you access. $ here stands for the request body as a whole
+- json():a method on $ input which will retrieve a JSON representation of the data you access. Dollar here stands for the request body as a whole
 - mapping template extracts data from model if we don't want to pass whole model
 
 ---

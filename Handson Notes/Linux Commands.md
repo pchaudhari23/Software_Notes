@@ -55,6 +55,7 @@ Online Linux terminals:
 
 - For bash - https://guide.bash.academy/
 - Learn shell scripting - required for CICD, Cloud computing etc.
+- press TAB to complete the linux command which has any file or folder!!!
 
 ---
 

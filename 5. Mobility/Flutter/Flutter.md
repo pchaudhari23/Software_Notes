@@ -31,6 +31,10 @@ Android studio:
 SDK Manager - Android SDKs
 AVD Manager - Android Virtual Devices
 
+1. Install Android studio and set PATH in environment variables for Android SDK, Android debugger and Emulator
+2. Set flutter SDK path in Android studio.
+3. Do flutter doctor
+
 ---
 
 Flutter CLI commands:
@@ -41,6 +45,8 @@ Flutter CLI commands:
 - flutter pub upgrade: upgrade all the dependencies in pubspec file
 - flutter doctor
 - flutter run
+- flutter clean: To reduce size & share the project - removes .dart_tool (similar to node_modules in react) & build folder (similar to dist in react) & other things
+- To re-run any project from scratch: flutter clean => flutter pub get => flutter run
 
 ---
 
@@ -84,7 +90,7 @@ FLUTTER TOPICS:
 
 ---
 
-Widget name - Camel case, widget files - seperate multiple words with \_(underscore)
+Widget name - Camel case, widget files - seperate lowercase multiple words with \_(underscore)
 MaterialApp - routes, onGenerateRoute, push, pushNamed
 
 ---
