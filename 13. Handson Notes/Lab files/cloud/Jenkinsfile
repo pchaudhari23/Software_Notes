@@ -1,0 +1,90 @@
+pipeline {
+    agent any
+
+    environment {
+        // Define any environment variables here
+    }
+
+    stages {
+       stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install' // For regular dev install
+                // sh 'npm ci'  // Alternative command for clean install
+            }
+        }
+
+        stage('Lint') {
+            steps {
+                sh 'npm run lint'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh 'npm test'
+            }
+        }
+
+        stage('Build App') {
+            steps {
+                sh 'npm run build'
+            }
+        }
+
+        stage('Deploy to DEV') {
+            when {
+                branch 'dev'
+            }
+            steps {
+                echo 'Deploying to DEV...'
+                // Add your development deployment commands here
+            }
+        }
+
+        stage('Deploy to UAT') {
+            when {
+                branch 'uat'
+            }
+            steps {
+                echo 'Deploying to UAT...'
+                // Add your UAT deployment commands here
+            }
+        }
+
+        stage('Deploy to PROD') {
+            when {
+                branch 'main'
+            }
+            steps {
+                echo 'Deploying to PROD...'
+                // Add your production deployment commands here
+            }
+        }
+
+        // We can directly run script in steps.
+         stage('Custom Script') {
+            steps {
+                script{
+                    // Example of running a custom script
+                    sh 'echo "Running a custom script..."'
+                    // You can add more complex logic here, such as calling external scripts or performing additional checks
+                }
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Build succeeded!'
+        }
+        failure {
+            echo 'Build failed!'
+        }
+    }
+}

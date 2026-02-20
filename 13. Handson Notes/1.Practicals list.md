@@ -10,6 +10,8 @@ SHELL SCRIPTING
 
 4] File search, creation, edit and delete
 
+5] Pass inputs to the script. Add the input parameters after acript file name in command
+
 ---
 
 DOCKER

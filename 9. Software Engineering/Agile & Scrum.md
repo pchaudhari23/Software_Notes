@@ -5,7 +5,7 @@ Before sprint start:
 Meetings:
 
 1. Daily standup meeting (DSM)/ Scrum meeting - everyday
-2. Sprint grooming/planning
+2. Sprint planning
 
 ---
 

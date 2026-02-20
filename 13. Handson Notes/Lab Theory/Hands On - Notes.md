@@ -60,6 +60,10 @@ Vim Commands:
 
 ---
 
+nginx: 
+
+---
+
 ngrok:
 
 - Its a tool, a cross platform tunneling application that lets us expose local development server to internet through secure tunnels.
