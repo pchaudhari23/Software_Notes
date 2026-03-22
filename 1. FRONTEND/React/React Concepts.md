@@ -31,25 +31,20 @@ CORE CONCEPTS:
    - Local state: usestate hook, Global state: state management libraries like redux.
    - State variables must not be mutated or updated directly. First create a copy and then modify.
    - Usually state variable of a parent component acts as a prop for child component.
-
 2. **Props:**
 
    - Props are the attributes or arguments passed to a react component.
    - Props are read only, their value must not be changed.
-
 3. **Hooks:**
 
    - Hooks are the inbuilt functions in react which we can use for acessing and modifying the state variable or do various operations throughout a components lifecycle.
-
 4. **Virtual DOM & Reconciliation:**
 
    - React uses a virtual DOM to compare changes in memory and updates only the necessary parts of the real DOM through reconciliation, minimizing re-renders and improving performance.
-
 5. **Webpack bundler:**
 
    - Bundler is a tool which takes all the javascript files and all the code in the project and creates single individual html, css, js files in form of static assets which the browser uses to display the website.
    - Webpack is a type of bundler which react uses.
-
 6. **Babel:**
 
    - Babel is a javascript compiler which transforms or compiles the javascript code in such a version that all the browsers can understand it. It makes advanced javascript code compatible with older browsers.
@@ -73,6 +68,41 @@ COMPONENTS:
 - Lifecycle: Class components use lifecycle methods. It uses componentDidMount, componentDidUpdate and componentWillUnount.
 - Class components use a constructor and this keyword and access props using this.props.
 - Also class components are outdated now. The new react documentation does not mention them. They are only used in legacy codebases now.
+
+---
+
+REACT SERVER COMPONENTS:
+
+- They are rendered on server and their output which is built up HTML is sent to the client.
+- They can directly perform API calls or database queries since they run on the server.
+- These functional components can be written as async functions, which alllows them to fetch data during rendering. This is not the case in regular react functional components.
+- This reduces client-side JavaScript since their code never runs in the browser. It makes the page load faster.
+- Right now server components exist only in next js and in React 19 which are still in experimental stage.
+- In next js, all components are server components by default meaning regular React useState, useEffect hooks will not works in them and require "use-client" directive to make them client components.
+- Useful in SEO and the page content is already available before the page reaches browser.
+
+---
+
+REACT COMPILER:
+
+* The React Compiler is a build-time optimization tool developed by **Meta** for **React** that automatically improves component performance.
+* It analyzes your React code and applies optimizations like memoization without requiring manual hooks.
+* It reduces the need for hooks such as `useMemo` and `useCallback` in many cases by handling them automatically.
+* It prevents unnecessary re-renders by tracking how state and props are used within components.
+* It works during the compilation (build) step, so there is no additional runtime overhead in the browser.
+* It simplifies React development by automatically handling optimizations (like memoization), reducing bugs from dependency arrays and making code cleaner and easier to maintain.
+* It improves performance by updating only the parts of the UI affected by data changes, and is especially helpful in large applications—though it is still evolving and requires proper tooling support.
+
+---
+
+REACT HOCs:
+
+* A Higher-Order Component (HOC) is a function that takes a component and returns a new enhanced component.
+* It allows reuse of common logic across multiple components in React.
+* HOCs are useful for handling things like authentication, data fetching, or logging.
+* HOCs do not modify the original component; instead, they wrap it and pass additional props or behavior down to it.
+* Overusing HOCs can make component trees harder to understand (wrapper nesting), which is why modern React development often prefers hooks for better readability.
+* But they are used less often today in favor of hooks for simpler and cleaner code.
 
 **HOC:**
 

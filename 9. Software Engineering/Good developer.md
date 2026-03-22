@@ -32,19 +32,22 @@ Three stages:
 2. Afternoon - post lunch - 2 to 5 PM - 2hrs
 3. Evening - post tea break - 5 to 8 PM - 2hrs
 
-Expectations:
+Senior software developer expectations:
 
-- Quick understanding
-- Good logic and analysis
-- Good conceptual knowledge
-- Good project knowledge
-- Spend half to one hour daily to understand repo
-- Speed
-- Complexity of task and the skill level or experience. More tasks completed in less time.
-- Learning new things, exploring for the project work
-- Be confident in your development
-- Shift your gears
-- Projects process and compliance
+* Write clean, optimized, and efficient code
+* Understand system architecture and contribute to technical/project decisions
+* Continuously explore and implement new technologies or approaches for project needs
+* Demonstrate quick understanding of requirements and problems
+* Apply strong logical thinking and analytical skills
+* Maintain solid conceptual and technical knowledge
+* Develop deep understanding of the project and codebase
+* Spend 30–60 minutes daily reviewing and understanding the repository
+* Deliver tasks with good speed and efficiency
+* Handle increasing task complexity based on experience and skill level
+* Complete more tasks effectively within shorter timelines
+* Show confidence in development decisions and implementations
+* Shift your gears
+* Follow project processes, standards, and compliance requirements
 
 ---
 
@@ -93,27 +96,21 @@ WORK & TIME MANAGEMENT:
 - Learning
 - Other (Project, practice, preparation etc) - Can plan on only weekends or holidays as well
 
-SIDE TASKS: Non Coding work
-
 PAIN POINTS/CHALLENGES:
 
-- Unable to estimate properly - major point !!!
-- Side tasks consume time
-- Feeling sleepy, lazy, lethargic
-- Unable to pay attention in meetings
-- Too much work apart from coding Jira board
-- Too many meetings
-- Too many Side tasks
-- Getting foggy unable to understand sometimes
-- Not clear communication sometimes
-- In between tasks take time
-- JIRA board activities are time consuming and frustrating
-- It feels like complete chaos and confusion
-- Juggling and multitasking
-- Asking basic questions
-- SIDE TASKS: Major point
-- Sometimes I just feel stuck...not able to think forward
-- Some people get it immidiately and why couldn't I think of that
+- Difficulty estimating tasks accurately
+- Frequent side tasks interrupting focus (major issue)
+- Excessive meetings reducing productive time
+- Time-consuming JIRA board activities; non coding work outweighing coding
+- Feeling sleepy, lazy, and lethargic during work
+- Difficulty paying attention in meetings
+- Mental fog at times; struggling to understand things clearly
+- Occasionally unclear or ineffective communication
+- Sense of chaos and confusion in workflow
+- Feeling mentally stuck and unable to move forward on problems
+- Constant juggling and multitasking
+- Needing to ask basic questions
+- Frustration when others grasp things quickly but it takes longer to process
 
 ---
 
