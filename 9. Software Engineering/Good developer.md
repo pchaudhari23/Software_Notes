@@ -18,6 +18,7 @@ Thoughts:
 1. Learn many things with decent knowledge but one thing with deep knowledge. Jack of all trades, master of one. Scale up and scale out.
 2. Is learning new things worth investing time, effort and money? What return does it give me in terms of salary?
 3. Or should I spend time honing and sharpening my known skills? Which of two is better use of time?
+4. Use very minimum or no AI while learning. Do things by hand like good old days, search, read docs, understand basic concepts instead of having everything built.
 
 ---
 
