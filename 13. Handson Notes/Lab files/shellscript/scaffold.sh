@@ -5,7 +5,9 @@ set -e
 # =====================
 # CONFIG
 # =====================
-PROJECT_NAME="vite-react-app"
+read -p "Enter your project name (default: vite-react-app): " PROJECT_NAME
+PROJECT_NAME=${PROJECT_NAME:-vite-react-app}
+
 
 echo "=============================="
 echo " Scaffolding Vite React App"
@@ -48,22 +50,21 @@ EOF
 # 6. Update App.css
 cat > src/App.css << 'EOF'
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-EOF
-
-# 7. Update main.css
-cat > src/main.css << 'EOF'
-body {
-  margin: 0;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  text-align: center;
+}
+
+EOF
+
+# 7. Update index.css
+cat > src/index.css << 'EOF'
+html,body {
+  margin: 0;
+  padding:0;
 }
 EOF
 
