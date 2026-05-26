@@ -113,6 +113,18 @@ REACT HOCs:
 
 ---
 
+REACT JS v/s REACT with TypeScript
+
+* Basic difference is typescript is static typed language (type check happens at compile time) whereas javascript is dynamically typed language (type check happens at runtime).
+* Because of this, errors can  be caught early during the development instead of finding them in runtime.
+* Code quality is good, its safe, predictable and less prone to runtime bugs.
+* Refactoring is easy
+* Scaling is good in large codebases
+* Slightly more setup and extra code writing is required but it gives better readbilty as the code is self documenting
+* Prop validation in react is better and API integration is better as we can exact shapes of request and response objects
+
+---
+
 REACT 19:
 
 1. React compiler - no useMemo, no useCallback

@@ -18,11 +18,14 @@ MNCs:
 16. Birlasoft
 17. Synechron
 18. EY
+19. Fintech, Banks
 
 ---
 
 1. Barclays
 2. IBM
+3. Nvidia
+4. Adobe
 
 ---
 

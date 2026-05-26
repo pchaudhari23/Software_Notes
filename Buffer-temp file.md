@@ -6,5 +6,7 @@
 4. Service based: TCS, Cognizant etc.
 5. Mid-sized company
 6. Startups
+7. Fintech, Banks
+8. Consulting firms
 
 ---
