@@ -115,3 +115,13 @@ CORPORATE TERMS:
 5. Higher management, Leaders
 
 ---
+
+LEADERSHIP FANCY WORDS
+
+1. Stepping outside of comfort zone
+2. Curiosity, asking questions
+3. Desire to grow
+4. Those setbacks became stepping stones in my success journey
+5. Give me opportunity to shine out
+
+---
