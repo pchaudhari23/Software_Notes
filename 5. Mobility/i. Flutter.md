@@ -100,62 +100,64 @@ Widgets: Stateless & Stateful
 
 - build method is used to build or create the widget at runtime.
 
-class MyWidget extends StatelessWidget {
+```dart
+class MyWidget extends StatelessWidget {  
+  const MyWidget({super.key}); // constructor
 
-// constructor
-const MyWidget({super.key});
+  @override Widget build(BuildContext context) {
+    return const Placeholder();  // OR maybe Scaffold Widget
+  }
+}
+```
 
-@override
-Widget build(BuildContext context) {
-return const Placeholder(); // OR maybe Scaffold Widget
-}
-}
 
 ---
 
+```dart
 class MyWidget extends StatefulWidget {
-
 // constructor
-const MyWidget({super.key});
+  const MyWidget({super.key});
 
-@override
-State `<MyWidget>` createState() {
-return \_MyWidgetState();
+  @override
+  State<MyWidget> createState() {
+    return _MyWidgetState();
+  }
+
+  @override
+  State<MyWidget> createState() => _MyWidgetState();
 }
+
 OR
 
-@override
-State `<MyWidget>` createState() => \_MyWidgetState();
-}
-
-class \_MyWidgetState extends State `<MyWidget>` {
-
-int \_stateVariable = 0;
+class _MyWidgetState extends State<MyWidget> {
+  int _stateVariable = 0;
 
 // initialisation method, runs before the build method
-@override
-void initState() {
-super.initState();
-}
+  @override
+  void initState() {
+    super.initState();
+  }
 
 // takes anonymous function as input, state varaiables mentioned in the state class are changed in the
 // setState method's anonymous function. setState method triggers the build method again and the widget
 // re-renders, UI update happens
 
-setState(() {});
+  setState(() {});
 
-    @override
-    void dispose() {
-    	// Clean up the controller when the widget is disposed.
-    	_exampleController.dispose();
-    	super.dispose();
-    }
+  @override
+  void dispose() {
+    // Clean up the controller when the widget is disposed.
+    _exampleController.dispose();
+    super.dispose();
+  }
 
-@override
-Widget build(BuildContext context) {
-return const Placeholder();
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
 }
-}
+
+```
 
 ---
 

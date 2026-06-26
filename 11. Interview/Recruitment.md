@@ -1,7 +1,9 @@
-MNCs:
+**COMPANIES:**
+
+SERVICE BASED:
 
 1. Persistent
-2. Congnizant
+2. Cognizant
 3. Accenture
 4. TCS
 5. Infosys - Feedback - Low package
@@ -12,31 +14,53 @@ MNCs:
 10. Tech Mahindra - Feedback - Abusive work culture
 11. L&T Infotech
 12. LTI Mindtree
-13. Deloitte
-14. ATOS
-15. Capgemini
-16. Birlasoft
-17. Synechron
-18. EY
-19. Fintech, Banks
+13. ATOS
+14. Capgemini
+15. Birlasoft
+16. Synechron
 
 ---
+
+F/M AANG:
+
+1. Facebook/Meta
+2. Amazon
+3. Apple
+4. Netflix
+5. Google
+
+---
+
+BIG 4:
+
+1. Deloitte
+2. PwC
+3. EY
+4. KPMG
+
+---
+
+PRODUCT BASED:
+
+1. Microsoft
+2. Adobe
+3. Nvidia
+4. IBM
+
+---
+
+FINTECH/BANKS:
 
 1. Barclays
-2. IBM
-3. Nvidia
-4. Adobe
 
 ---
 
-- FAANGM
+CONSULTING FIRMS:
 
 ---
 
-- Visit careers page of all MNC
-- Build CV via resume builder. Enhancev.com
-- Check the ATS score and build the resume ATS compliant
-- What type of questions were asked in the interviews. What are my weal areas, knowledge gaps? What questions I could not answer?
+* MID SIZED COMPANY
+* STARTUPS
 
 ---
 
@@ -69,10 +93,5 @@ Perks/facilities:
 - Corporate trainings
 - Life insurance
 - Overtime, comp-off
-
----
-
-- Interview question: Tell me something about Nitor OR Give a brief 2 line introduction of Nitor while introducing yourself.
-- I haven't had any project on this in Nitor but I have learnt it taken training and built personal projects.
 
 ---

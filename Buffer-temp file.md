@@ -1,19 +1,4 @@
-5 types of companies:
-
-1. Big four: Deloitte, PwC, EY, KPMG
-2. F/M AANG: Facebook/Meta, Amazon, Apple, Netflix, Google
-3. Product based: Microsoft, Adobe etc.
-4. Service based: TCS, Cognizant etc.
-5. Mid-sized company
-6. Startups
-7. Fintech, Banks
-8. Consulting firms
-
----
-
-Add in Technologies:
-
-# Tools, Platform, AI
+Tools, Platform, AI
 
 Graphic Design: Canva
 
@@ -99,4 +84,4 @@ Learn to use tools:
 2. WinSCP (Uses port 22 to run SFTP protocol)
 3. NoMachine client (Uses port 4000 to run NX protocol)
 
-Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password
+Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password. Also port number on which application is running. For DBeaver and NoMachine/WinSCP connection.
