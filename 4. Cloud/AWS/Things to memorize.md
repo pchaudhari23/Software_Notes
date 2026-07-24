@@ -1,7 +1,7 @@
 EC2 Instance purchase options and use cases:
 
 1. On-Demand Instances – short workload, predictable pricing, pay by second
-2. Reserved Instances(1 & 3 years) – long workloads
+2. Reserved Instances (1 & 3 years) – long workloads
 3. Convertible Reserved Instances – long workloads with flexible instances
 4. Savings Plans (1 & 3 years) – commitment to an amount of usage, long workload
 5. Spot Instances – short workloads, cheap, can lose instances (less reliable)
@@ -56,7 +56,9 @@ Write capacity units:
 - 1 WCU = 1 write/sec for 1KB item
 - WCUs = No of item writes/sec \* (Item size in KB/1 KB)
 - Item size in decimal values get rounded to upper KB
-  Read capacity units:
+
+Read capacity units:
+
 - 1 RCU = 1 Strongly consistent read/sec OR 2 Eventually consistent read/sec for 4 KB item
 - RCUs = No of Strongly consistent reads/sec \* (Item size in KB/4 KB)
 - RCUs = (No of Eventually consistent reads/sec)/2 \* (Item size in KB/4 KB)
@@ -66,11 +68,96 @@ Write capacity units:
 
 Dynamo DB formula misc:
 
-- Transactional capacity computation = RCUs _ 2 OR WCUs _ 2
-  To compute the number of partitions:
-- 𝑜𝑓 𝑝𝑎𝑟𝑡𝑖𝑡𝑖𝑜𝑛𝑠 by capacity = (RCUs total/3000) + (WCUs total/1000)
-- 𝑜𝑓 𝑝𝑎𝑟𝑡𝑖𝑡𝑖𝑜𝑛𝑠 by size = Total size/ 10 GB
-- 𝑜𝑓 𝑝𝑎𝑟𝑡𝑖𝑡𝑖𝑜𝑛𝑠 = ceil(max(# 𝑜𝑓 𝑝𝑎𝑟𝑡𝑖𝑡𝑖𝑜𝑛𝑠 by capacity,# 𝑜𝑓 𝑝𝑎𝑟𝑡𝑖𝑡𝑖𝑜𝑛𝑠 by size))
+DynamoDB Capacity & Partition Formulas
+
+1. Transactional Capacity
+
+Transactional operations consume **2× the normal capacity**.
+
+- **Transactional RCUs** = **Normal RCUs × 2**
+- **Transactional WCUs** = **Normal WCUs × 2**
+
+---
+
+2. Partitions by Capacity
+
+Each physical partition supports:
+
+- **3,000 RCUs**
+- **1,000 WCUs**
+
+Read Partitions = Total RCUs / 3000
+
+Write Partitions = Total WCUs / 1000
+
+Partitions by Capacity = max(Read Partitions, Write Partitions)
+
+or
+
+Partitions by Capacity = max(RCUs / 3000, WCUs / 1000)
+
+**Note:** Use **max()**, **not addition (+)**.
+
+---
+
+3. Partitions by Size
+
+Each partition can store up to **10 GB**.
+
+Partitions by Size = Total Table Size / 10 GB
+
+---
+
+4. Total Number of Partitions
+
+Total Partitions = ceil(max(Partitions by Capacity, Partitions by Size))
+
+where:
+
+- `max()` = choose the larger value
+- `ceil()` = round up to the nearest whole number
+
+---
+
+Example
+
+Given:
+
+- RCUs = 9,000
+- WCUs = 1,500
+- Table Size = 25 GB
+
+Step 1: Capacity Partitions
+
+Read Partitions = 9000 / 3000 = 3
+
+Write Partitions = 1500 / 1000 = 1.5
+
+Partitions by Capacity = max(3, 1.5) = 3
+
+Step 2: Size Partitions
+
+Partitions by Size = 25 / 10 = 2.5
+
+Step 3: Final Partitions
+
+Total Partitions = ceil(max(3, 2.5))
+                 = ceil(3)
+                 = 3
+
+---
+
+DynamoDB Cheat Sheet
+
+| Formula                | Expression                                                |
+| ---------------------- | --------------------------------------------------------- |
+| Transactional Read     | `RCUs × 2`                                             |
+| Transactional Write    | `WCUs × 2`                                             |
+| Read Partitions        | `RCUs / 3000`                                           |
+| Write Partitions       | `WCUs / 1000`                                           |
+| Partitions by Capacity | `max(RCUs / 3000, WCUs / 1000)`                         |
+| Partitions by Size     | `Table Size / 10 GB`                                    |
+| Final Partitions       | `ceil(max(Partitions by Capacity, Partitions by Size))` |
 
 ---
 
@@ -121,7 +208,5 @@ aws cloudformation package: packages the local artifacts and upload to S3
 aws cloudformation deploy: deploy the template. The template must be stored in S3 only
 aws cloudformation validate-template: check the template if it is a valid JSON or YAML file
 aws cloudformation update-stack: update an existing stack
-
-Functions:
 
 ---

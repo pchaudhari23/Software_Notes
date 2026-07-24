@@ -103,6 +103,8 @@
 103. It might be an overkill for us...
 104. Data corruption in db
 105. Wrapper around the component
+106. I'll take a pause here to see if anyone has any questions
+107. In the interest of time
 
 ---
 

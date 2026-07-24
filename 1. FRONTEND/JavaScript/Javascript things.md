@@ -178,7 +178,7 @@ ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
 ---
 
 - The this keyword is used to get/access or to set/modify/assign a value to the data member variable of a class, in that class itself.
-- The scope of this keyword to be used on a data memberis in that particular class.
+- The scope of this keyword to be used on a data member is in that particular class.
 - this keyword is used on the data member of a class and not on the member function.
 
 Eg:
