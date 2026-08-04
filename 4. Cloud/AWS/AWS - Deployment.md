@@ -29,9 +29,15 @@ Deployment platforms:
 
 ---
 
-1. Blue Green: Elastic Beanstalk, OpsWorks, CloudFormation, CodeDeploy, and Amazon ECS.
-2. Rolling deployment: CloudFormation, ECS, Elastic Beanstalk, OpsWorks
+1. Blue Green: Elastic Beanstalk, OpsWorks, CloudFormation, Amazon ECS, and CodeDeploy.
+2. Rolling deployment: Elastic Beanstalk, OpsWorks, CloudFormation, Amazon ECS.
 3. In Place deployment: CodeDeploy
+
+- Cloudformation: Blue Green, Rolling deployment
+- Elastic Beanstalk: Blue Green, Rolling deployment
+- ECS: Blue Green, Rolling deployment
+- OpsWorks: Blue Green, Rolling deployment
+- CodeDeploy: In Place, Blue Green
 
 ---
 

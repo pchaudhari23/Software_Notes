@@ -60,7 +60,7 @@ Vim Commands:
 
 ---
 
-nginx: 
+nginx:
 
 ---
 
@@ -69,5 +69,16 @@ ngrok:
 - Its a tool, a cross platform tunneling application that lets us expose local development server to internet through secure tunnels.
 - It creates a secure public URL for a local server. So developers can run a web app on localhost:3000 and instantly get a public URL like https://abcd1234.ngrok.io to share with others.
 - Devs use it to share, test and debug applications running on local machines without deploying them to a public server.
+
+---
+
+Windows Command Prompt commands
+
+1. ping google.com
+2. ipconfig
+3. cls
+
+.cmd file - used to run commands or script in the shell
+.bat file - used to run commands in batch
 
 ---

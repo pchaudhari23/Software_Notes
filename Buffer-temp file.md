@@ -106,8 +106,6 @@ Client => API Gateway => Lambda function => DynamoDB. Auth using Cognito, Storag
 
 ---
 
-
-
 - Maximum number of your instances can be equal to the number of open shards of the Kinesis stream
 - Any real time changes to dynamodb - DynamoDB streams
 - The execution context is a temporary runtime environment that initializes any external dependencies of your Lambda function code, such as database connections or HTTP endpoints.
@@ -150,4 +148,16 @@ Lambda function concurrency calculations
 ---
 
 Explore AWS Amplify and SAM for serverless!!
---------------------------------------------
+
+---
+
+Project study:
+
+1. Project use case
+2. Technologies, libraries, versions
+3. Repository structure
+4. Entry point
+5. Components, modules
+6. Data flow
+7. Code snippets, functions, library classes and APIs
+8. Improvements, Challenges, tradeoffs, tech decisions
