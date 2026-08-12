@@ -1,4 +1,25 @@
-Separate the concepts and technologies - 100s of technologies - clear the conecpts first, then learn the technologies as per need basis
+TOOLS, PLATFORMS:
+
+1. Graphic Design: Canva
+2. UI/UX Design: Figma
+3. E-commerce: Shopify, Magento
+4. ERP: SAP, Odoo
+5. CRM: Salesforce
+6. CMS: WordPress, Joomla, Drupal, DNN
+7. Website builder: Wix
+8. Hosting/ infrastructure: Hostinger, GoDaddy, Cloudflare
+9. Stock images: Unsplash, Getty images, Pexels, Pixabay, Shutter stock, freepik, iStock
+10. HRMS & Payroll softwares
+11. Office productivity suite - Google Workspace, Microsoft 365, LibreOffice, Apple iWork, WPS, Zoho
+12. Project management: JIRA
+13. Note-taking: Notion, Evernote, Obsidian
+
+Microsoft IDEs:
+
+1. Visual Studio Code (VS Code)
+2. Visual Studio Community
+3. Visual Studio Professional
+4. Visual Studio Enterprise
 
 ---
 
@@ -7,7 +28,7 @@ FRONTEND TECHNOLOGIES:
 1. HTML 5
 2. CSS 3
 3. Bootstrap 3/4
-4. Javascript => Jquery => AJAX call, JSON, XML
+4. Javascript
 5. Typescript
 
 ---
@@ -32,18 +53,6 @@ BACKEND TECHNOLOGIES:
 6. NodeJS with ExpressJS Framework
 7. PHP, Laravel framework
 8. Ruby on Rails
-9. Firebase
-10. Swagger
-
----
-
-DATABASE TECHNOLOGIES:
-
-1. MySQL
-2. MongoDB
-3. PlSQL
-4. PostGRE SQL
-5. SQLite (Mobile database)
 
 ---
 
@@ -57,34 +66,5 @@ MOBILE TECHNOLOGIES:
 6. iOS - Native languages - Objective C & Swift
 7. Scala
 8. Xamarin - .NET framework for mobile platform
-
----
-
-TOOLS:
-Microsoft IDEs:
-
-1. Visual Studio Code (VS Code)
-2. Visual Studio Community
-3. Visual Studio Professional
-4. Visual Studio Enterprise
-
-Database:
-
-1. Microsoft SQL Server Management Studio
-
-Mobile Application tools:
-
-1. Android Studio
-2. Vysor
-
----
-
-1. Wordpress
-2. Joomla
-3. Shopify
-4. Magento
-5. Hostinger
-6. GoDaddy
-7. Cloudflare
 
 ---

@@ -58,17 +58,3 @@ Online Linux terminals:
 - press TAB to complete the linux command which has any file or folder!!!
 
 ---
-
-AWS CLI: check .sh files in resources
-aws --version
-
-AWS Cloudshell:-
-
-1. https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html
-2. https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
-
-Lambda functions:
-aws lambda list-functions
-aws lambda list-functions --region ap-south-1
-
----

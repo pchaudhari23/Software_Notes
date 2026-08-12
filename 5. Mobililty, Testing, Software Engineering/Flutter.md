@@ -35,6 +35,8 @@ AVD Manager - Android Virtual Devices
 2. Set flutter SDK path in Android studio.
 3. Do flutter doctor
 
+Vysor - Mobile mirror on desktop
+
 ---
 
 Flutter CLI commands:
@@ -101,7 +103,7 @@ Widgets: Stateless & Stateful
 - build method is used to build or create the widget at runtime.
 
 ```dart
-class MyWidget extends StatelessWidget {  
+class MyWidget extends StatelessWidget {
   const MyWidget({super.key}); // constructor
 
   @override Widget build(BuildContext context) {
@@ -109,7 +111,6 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
-
 
 ---
 
@@ -156,7 +157,6 @@ class _MyWidgetState extends State<MyWidget> {
     return const Placeholder();
   }
 }
-
 ```
 
 ---

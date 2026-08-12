@@ -114,7 +114,8 @@ QUESTIONS:
    How to manage this on a single machine?
 6. Enable 2FA for my repo?
 7. How to ssh instead of https in git repo?
-   ======================================WORK IN PROGRESS=================================================
+
+======================================WORK IN PROGRESS=================================================
 
 GitHub commands: (on git bash - go to local repository folder => R click => Git Bash here) (Local Repo)
 
