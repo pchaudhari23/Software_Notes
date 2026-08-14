@@ -6,14 +6,6 @@ Explore all the AI options in VS Code?
 
 ---
 
-AWS Serverless: Prepare for interviews! And make section in lab notes
-
-Typical setup:
-
-Client => API Gateway => Lambda function => DynamoDB. Auth using Cognito, Storage in S3, Domain with Route53
-
----
-
 - Maximum number of your instances can be equal to the number of open shards of the Kinesis stream
 - Any real time changes to dynamodb - DynamoDB streams
 - The execution context is a temporary runtime environment that initializes any external dependencies of your Lambda function code, such as database connections or HTTP endpoints.
@@ -52,10 +44,6 @@ Lambda function concurrency calculations
    Concurrent executions = Number of active batches being processed = (Messages received per second × Processing time) / Batch size
 
 - Deployment techniques
-
----
-
-Explore AWS Amplify and SAM for serverless!!
 
 ---
 
