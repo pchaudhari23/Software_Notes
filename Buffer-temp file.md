@@ -1,8 +1,14 @@
+Infrastructure As A Code - Use YAML file - Dockerfile, Kubernetes, Cloud formation, Elastic beanstalk
+
+---
+
 How to make github copilot in vs code access bitbucket PR and JIRA?
 
 How to connect various plugins to llms?
 
 Explore all the AI options in VS Code?
+
+Github copilot vs M365 Copilot vs Copilot
 
 ---
 
