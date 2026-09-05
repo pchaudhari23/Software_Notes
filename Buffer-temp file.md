@@ -1,5 +1,7 @@
 Infrastructure As A Code - Use YAML file - Dockerfile, Kubernetes, Cloud formation, Elastic beanstalk
 
+Access locally running project in vs code through internet via port forwarding. Copy port of project in ports tab.
+
 ---
 
 How to make github copilot in vs code access bitbucket PR and JIRA?
