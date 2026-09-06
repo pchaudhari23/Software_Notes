@@ -1,3 +1,9 @@
+Listen, Speak, Read, Write
+
+---
+
+Phrase bank:
+
 1. Are you saying that....? / So you are saying that...../ You mean......right??
 2. First things first....
 3. That's your call/ That's not your call/ Take your call on that..../ I had to take a call.....
