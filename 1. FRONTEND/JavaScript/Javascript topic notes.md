@@ -1,3 +1,16 @@
+Topics list:
+
+1. References
+2. Hoisting
+3. Closure
+4. Promises, async/await
+5. Event loop....
+6. Debounce
+7. Throttling
+8.
+
+---
+
 **TYPESCRIPT:**
 
 - **TypeScript** is an **open-source programming language** developed by **Microsoft** and its **superset of JavaScript**.
@@ -216,13 +229,16 @@ const p = new Person("Adam", 25);
 
 **HOISTING:**
 
-- Hoisting is a JavaScript behavior where declarations of variables and functions are processed before code execution. During the memory allocation (creation phase), JavaScript allocates memory for variables and functions before executing the code.
+- Hoisting is a JavaScript behavior where declarations of variables and functions are processed before the code execution. It happens during the creation phase, so it appears as if they are moved to the top of their scope.
+- Only declarations are hoisted, not initializations. So when var is hoisted, its initialized to undefined.
+- What is TDZ? When let and const are hoisted, they are not initialized and if we try to access them we get reference error. The period when they are hoisted but not yet accessible is the Temporal Dead Zone.
+
+---
+
+- Scope: Global scope, Function scope, Block scope. Others are module scope, lexical scope.
+- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
 - If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
 - var is function scoped, let and const are block scoped.
-- Only declarations are hoisted, not initializations.
-- var variables are hoisted and initialized with undefined.
-- let and const variables are hoisted but not initialized.
-- Hoisting does work with let and const, but they are placed in the Temporal Dead Zone (TDZ). The Temporal Dead Zone (TDZ) is the time between the start of a scope and the declaration of a let or const variable, during which accessing it throws a ReferenceError. Accessing them before their declaration results in a ReferenceError (not undefined).
 
 ```javascript
 1.var
@@ -264,9 +280,8 @@ const p = new Person("Adam", 25);
 
 **CLOSURE:**
 
-- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
-- **Closure:** When the inner function is returned or used outside the outer function, allowing it to remember and access the outer function’s variables even after execution ends.
-- Scope: Global scope, function scope, block scope
+- A closure is created when a nested function can still access variables from its outer function's scope, even after the outer function has finished executing.
+- Why do we use closures? We use closures to keep the data private, and allow functions to preserve their variable state which is useful for things like callbacks, event handling and memoization.
 
 Example:
 
@@ -287,36 +302,59 @@ counter(); // 2
 counter(); // 3
 ```
 
+```JavaScript
+function createAccount(balance) {
+  return {
+    deposit: (amt) => (balance += amt),
+    getBalance: () => balance,
+  };
+}
+const acc = createAccount(100);
+acc.deposit(50);
+acc.getBalance(); // 150
+acc.balance;      // undefined, balance is inaccessible from outside
+```
+
 ---
 
 **PROMISES, ASYNC/AWAIT:**
 
-- There should be either async/await with try/catch OR .then().catch()
-- Using both together is unnecessary even if technically not wrong.
-- then called on promise resolve, catch called on promise reject
-- Whatever is passed in resolve() - it is collected in then() method
-- Whatever is passed in reject() - it is collected in catch() method
-- await keyword in the async/ await function stops the function exceution until the code in front of await(eg: fetching data from api) is completed. Once we have the response data, the furthur code is executed.
-- .then() and .catch() - chain methods don't stop until the data from api is received. they continue the code after that and whenever the response is received, they will store or set the received data in variable
-- make a habit to write all the code in try catch blocks
-- make the await api call in the try block
-- Usually throw Error class object in a Promise reject
-- Promise.all, Promise.race????
+Q1. What are promises in javascript? Promise is an object which acts like a placeholder for the future value of an asynchronous operation. The promise can be in one of 3 states - pending, fulfilled, rejected.
+
+Q2. Can you explain the asynchronous behaviour of Javascript? So javascript is single threaded which means it can do one thing at a time. When it encounters an operation that takes an unpredictable amount of time, like an API call, it does not wait. It passes it to the browser, which executes it separately, and JavaScript continues to the next operation. When the browser finishes, the callback goes into a queue, and the event loop pushes it onto the call stack once the stack is empty. Promise callbacks go in a separate queue that gets priority.
+
+- Use either `async/await` with `try/catch`, or `.then().catch()`.
+- `resolve(value)` → the value goes to `.then()`. `reject(error)` → the error goes to `.catch()`.
+- With `await`, put the call inside `try`, and handle failures in `catch`.
+- Promise utilities: Promise.all, Promise.race
+- Always reject with an `Error` object, not a string.
+- `await` pauses only that async function until the promise settles. The rest of the program keeps running.
+- `.then()` doesn't pause anything. The code after it runs immediately, and the callback fires later when the promise settles.
 - Learn how to:
-  - Convert an async/await function into using .then().catch()
-  - Convert .then().catch() function into using async/await
-  - How to promisify a function
+  - Convert an `async/await` function into using `.then().catch()`?
+  - Convert `.then().catch()` function into using `async/await`?
+  - How to promisify a function?
 
 ---
 
 **MISCELLENEOUS:**
 
+Javascript - Dynamically typed - Determines data type of a value at runtime.
+
+Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
+
+Strict type checking: === (data type & value), Equality checking: == (only value)
+
+Data types: 1. Primitive, 2. Non primitive
+
+Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion
+
+1.Implicit coercion, 2.Explicit coercion/Type casting
+
 ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
+
 ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
 
-- == vs === (equality and type checking)
-- Type coercion in javascript
-- Type casting - converting an object of one datatype into another
 - Null check: ?. - checks that something should not be null or undefined. used to fix error - cannot read property of undefined or use an empty array with OR condition (SomedatainArray || [])
 - ...args - array of aruguments - rest operator - when it's not known beforehand how many props would be there. In react it's ...props - object of props when number of props is not known
 
