@@ -2,10 +2,13 @@ REACT:
 
 - Javascript library for building user interface.
 - React maintains a **lightweight copy** of the actual DOM in memory called the **virtual DOM**.
-- When state or props of UI components change, React creates a new virtual DOM and compares it with the old DOM using a **diffing algorithm** to identify changes.
-- Then react updates only the changed parts of the real DOM. This process of comparing and updating the real DOM based on these changes is called **reconciliation**.
-- This **minimizes re-rendering**. So when there are frequent DOM manipulations they happen in memory and only minimal updates are applied to the browser's actual DOM.
-- Latest version: v19.2 (Dec 2025)
+- When state or props of UI components change, React creates a new virtual DOM and compares it with the old virtual DOM using a **diffing algorithm** to identify changes.
+- This process of comparing and updating the real DOM based on these changes is called **reconciliation**.
+- It happens in two phases. **Render phase** where the diffing happens, and **commit phase** where the real DOM is updated.
+- This **minimizes real DOM updates**. So when there are frequent re-renders, the diffing happens in memory and only necessary updates are applied to the browser's actual DOM. This improves performance.
+- **React Fiber** is an internal architecture introduced in React 16 that powers the reconciliation algorithm and rendering process.
+- **React Compiler** released with React 19, is a build time tool that optimizes components by memoizing values and functions, reducing unnecessary re-renders.
+- Latest version: v19.3 (Oct 2026)
 
 ---
 
@@ -26,27 +29,26 @@ FEATURES:
 CORE CONCEPTS:
 
 1. **State:**
-
    - State is the data which a react component holds.
    - Local state: usestate hook, Global state: state management libraries like redux.
    - State variables must not be mutated or updated directly. First create a copy and then modify.
    - Usually state variable of a parent component acts as a prop for child component.
-2. **Props:**
 
+2. **Props:**
    - Props are the attributes or arguments passed to a react component.
    - Props are read only, their value must not be changed.
+
 3. **Hooks:**
-
    - Hooks are the inbuilt functions in react which we can use for acessing and modifying the state variable or do various operations throughout a components lifecycle.
+
 4. **Virtual DOM & Reconciliation:**
-
    - React uses a virtual DOM to compare changes in memory and updates only the necessary parts of the real DOM through reconciliation, minimizing re-renders and improving performance.
-5. **Webpack bundler:**
 
+5. **Webpack bundler:**
    - Bundler is a tool which takes all the javascript files and all the code in the project and creates single individual html, css, js files in form of static assets which the browser uses to display the website.
    - Webpack is a type of bundler which react uses.
-6. **Babel:**
 
+6. **Babel:**
    - Babel is a javascript compiler which transforms or compiles the javascript code in such a version that all the browsers can understand it. It makes advanced javascript code compatible with older browsers.
 
 ---
@@ -85,24 +87,24 @@ REACT SERVER COMPONENTS:
 
 REACT COMPILER:
 
-* The React Compiler is a build-time optimization tool developed by **Meta** for **React** that automatically improves component performance.
-* It analyzes your React code and applies optimizations like memoization without requiring manual hooks.
-* It reduces the need for hooks such as `useMemo` and `useCallback` in many cases by handling them automatically.
-* It prevents unnecessary re-renders by tracking how state and props are used within components.
-* It works during the compilation (build) step, so there is no additional runtime overhead in the browser.
-* It simplifies React development by automatically handling optimizations (like memoization), reducing bugs from dependency arrays and making code cleaner and easier to maintain.
-* It improves performance by updating only the parts of the UI affected by data changes, and is especially helpful in large applications—though it is still evolving and requires proper tooling support.
+- The React Compiler is a build-time optimization tool developed by **Meta** for **React** that automatically improves component performance.
+- It analyzes your React code and applies optimizations like memoization without requiring manual hooks.
+- It reduces the need for hooks such as `useMemo` and `useCallback` in many cases by handling them automatically.
+- It prevents unnecessary re-renders by tracking how state and props are used within components.
+- It works during the compilation (build) step, so there is no additional runtime overhead in the browser.
+- It simplifies React development by automatically handling optimizations (like memoization), reducing bugs from dependency arrays and making code cleaner and easier to maintain.
+- It improves performance by updating only the parts of the UI affected by data changes, and is especially helpful in large applications—though it is still evolving and requires proper tooling support.
 
 ---
 
 REACT HOCs:
 
-* A Higher-Order Component (HOC) is a function that takes a component and returns a new enhanced component.
-* It allows reuse of common logic across multiple components in React.
-* HOCs are useful for handling things like authentication, data fetching, or logging.
-* HOCs do not modify the original component; instead, they wrap it and pass additional props or behavior down to it.
-* Overusing HOCs can make component trees harder to understand (wrapper nesting), which is why modern React development often prefers hooks for better readability.
-* But they are used less often today in favor of hooks for simpler and cleaner code.
+- A Higher-Order Component (HOC) is a function that takes a component and returns a new enhanced component.
+- It allows reuse of common logic across multiple components in React.
+- HOCs are useful for handling things like authentication, data fetching, or logging.
+- HOCs do not modify the original component; instead, they wrap it and pass additional props or behavior down to it.
+- Overusing HOCs can make component trees harder to understand (wrapper nesting), which is why modern React development often prefers hooks for better readability.
+- But they are used less often today in favor of hooks for simpler and cleaner code.
 
 **HOC:**
 
@@ -115,13 +117,13 @@ REACT HOCs:
 
 REACT JS v/s REACT with TypeScript
 
-* Basic difference is typescript is static typed language (type check happens at compile time) whereas javascript is dynamically typed language (type check happens at runtime).
-* Because of this, errors can  be caught early during the development instead of finding them in runtime.
-* Code quality is good, its safe, predictable and less prone to runtime bugs.
-* Refactoring is easy
-* Scaling is good in large codebases
-* Slightly more setup and extra code writing is required but it gives better readbilty as the code is self documenting
-* Prop validation in react is better and API integration is better as we can exact shapes of request and response objects
+- Basic difference is typescript is static typed language (type check happens at compile time) whereas javascript is dynamically typed language (type check happens at runtime).
+- Because of this, errors can be caught early during the development instead of finding them in runtime.
+- Code quality is good, its safe, predictable and less prone to runtime bugs.
+- Refactoring is easy
+- Scaling is good in large codebases
+- Slightly more setup and extra code writing is required but it gives better readbilty as the code is self documenting
+- Prop validation in react is better and API integration is better as we can exact shapes of request and response objects
 
 ---
 
@@ -152,7 +154,7 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 HTML: <div id="root"></div>;

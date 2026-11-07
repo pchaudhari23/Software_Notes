@@ -1,28 +1,25 @@
 Topics list:
 
-1. References
-2. Hoisting
-3. Closure
-4. Promises, async/await
-5. Event loop....
-6. Debounce
-7. Throttling
-8.
+1. Data types - Primitive, Non primitive
+2. References
+3. Prototypes
+4. this, call, bind, apply
+5. Scope
+6. Hoisting
+7. Closure
+8. Promises, async/await
+9. Event loop
+10. Debounce
+11. Throttling
 
 ---
 
-**TYPESCRIPT:**
+**DATA TYPES, TYPE COERCION:**
 
-- **TypeScript** is an **open-source programming language** developed by **Microsoft** and its **superset of JavaScript**.
-- It offers **static typing**, so we explicitly declare data type which helps catch errors **before running the code**.
-- **Type inference** helps automatically determine data type if not declared.
-- **Interfaces** & **Type alias** helps to define the structure of objects and ensure consistency.
-- **Object-Oriented Programming Support**: Classes, inheritance, access modifiers (public, private, protected), abstract classes.
-- **Compile-Time Error Checking,** not at runtime.
-- Modern JavaScript Support (ES6+) and excellent tooling and IDE support, Intellisense.
-- It is compiled into **(transpiled)** into plain JavaScript using typescript compiler which browsers and JavaScript engines understand.
-- TypeScript configuration of a project is stored in tsconfig.json file. Compilation: .ts (TypeScript file) => tsc (tsc compiler) => .js (JavaScript file)
-- Current version: v5.9 (Dec 2025)
+- Javascript - Dynamically typed - Determines data type of a value at runtime. Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
+- Data types: 1. Primitive, 2. Non primitive
+- Strict type checking: === (data type & value), Equality checking: == (only value)
+- Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion. Implicit coercion & Explicit coercion/Type casting
 
 ---
 
@@ -227,18 +224,21 @@ const p = new Person("Adam", 25);
 
 ---
 
+**SCOPE:**
+
+- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
+- **Global scope:** If variable is outside a function, then it has a global scope; it can be accessed anywhere.
+- **Function scope:** If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. var is function scoped.
+- **Block scope:** let and const are block scoped.
+- **Lexical scope:** A function's access to variables depends on where it is defined, not where it is called. Inner functions can access variables from their own scope and outer scopes, but outer functions cannot access inner variables. The scope of a variable determined by where it is declared in the source code is called its lexical scope.
+
+---
+
 **HOISTING:**
 
 - Hoisting is a JavaScript behavior where declarations of variables and functions are processed before the code execution. It happens during the creation phase, so it appears as if they are moved to the top of their scope.
 - Only declarations are hoisted, not initializations. So when var is hoisted, its initialized to undefined.
 - What is TDZ? When let and const are hoisted, they are not initialized and if we try to access them we get reference error. The period when they are hoisted but not yet accessible is the Temporal Dead Zone.
-
----
-
-- Scope: Global scope, Function scope, Block scope. Others are module scope, lexical scope.
-- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
-- If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
-- var is function scoped, let and const are block scoped.
 
 ```javascript
 1.var
@@ -337,24 +337,82 @@ Q2. Can you explain the asynchronous behaviour of Javascript? So javascript is s
 
 ---
 
+**DEBOUNCE:**
+
+- Debouncing is a mechanism to delay function execution for a specific period of inactivity.
+- It improves the performance by reducing unnecessary function calls.
+- Debouncing = clearTimeout followed by setTimeout.
+
+Example:
+
+```JavaScript
+function debounce(fn, delay) {
+    let timer;
+
+    return function () {
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+            fn();
+        }, delay);
+    };
+}
+
+// Usage
+const search = debounce(() => {
+    console.log("Searching...");
+}, 500);
+
+search();
+search();
+search();
+```
+
+**THROTTLE:**
+
+- Throttling is a mechanism to limit function execution to once within a specified time interval.
+- It improves performance by reducing excessive function executions.
+
+Example:
+
+```JavaScript
+function throttle(fn, delay) {
+    let lastCall = 0;
+
+    return function () {
+        const now = Date.now();
+
+        if (now - lastCall >= delay) {
+            fn();
+            lastCall = now;
+        }
+    };
+}
+
+function submit() {
+    console.log("Processing request...");
+}
+
+const throttledSubmit = throttle(submit, 2000);
+
+// Simulate repeated clicks
+throttledSubmit();
+throttledSubmit();
+throttledSubmit();
+```
+
+- Both use closures to retain variables between calls.
+- What is difference between both? Debouncing waits for inactivity, whereas throttling limits execution frequency.
+- Why is debouncing and throttling used? Both are used to improve the performance by reducing unnecessary function executions.
+- What is used when? Debouncing is generally using when making API request while user types into search bar. Throttling is used when some function is executed on mouse movement or scroll.
+
+---
+
 **MISCELLENEOUS:**
 
-Javascript - Dynamically typed - Determines data type of a value at runtime.
-
-Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
-
-Strict type checking: === (data type & value), Equality checking: == (only value)
-
-Data types: 1. Primitive, 2. Non primitive
-
-Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion
-
-1.Implicit coercion, 2.Explicit coercion/Type casting
-
-ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
-
-ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
-
+- A function which accepts another function as an argument or returns another function is called a **higher order function**. The function passed as argument is called **callback function**. The function returned by a higher-order function is simply called the **returned function.**
+- ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
+- ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
 - Null check: ?. - checks that something should not be null or undefined. used to fix error - cannot read property of undefined or use an empty array with OR condition (SomedatainArray || [])
 - ...args - array of aruguments - rest operator - when it's not known beforehand how many props would be there. In react it's ...props - object of props when number of props is not known
 
