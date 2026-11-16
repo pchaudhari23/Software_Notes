@@ -408,6 +408,10 @@ throttledSubmit();
 
 ---
 
+**POLYFILLS: .....**
+
+---
+
 **MISCELLENEOUS:**
 
 - A function which accepts another function as an argument or returns another function is called a **higher order function**. The function passed as argument is called **callback function**. The function returned by a higher-order function is simply called the **returned function.**

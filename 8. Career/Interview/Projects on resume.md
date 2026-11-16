@@ -1,0 +1,193 @@
+**SFG:**
+
+Managed scalable, mono repo architecture with shared reusable component library:
+
+- The core structure of the application in terms of the page layout, UI components used, the form fields, state management everything is setup in a shared library.
+- All such logic is abstracted in the repository in form of custom packages which are built to be used by other product teams as well.
+- This gives the consistency for development as well as for user experience.
+- So I imported the custom packages from the shared library into my UI project and used them.
+- The main advantage which we get from that is code duplication is reduced, maintenance and scalability is improved and fast development is possible.
+- The project uses Turbo repo as its build system, integrated with Yarn workspaces to manage a mono repo structure.
+
+---
+
+Implemented internationalization (i18n) and accessibility (a11y) to support global users:
+
+i18n:
+
+- The application is used by people from all over the world. So we have to consider the language support and also the people with disabilities.
+- I added all the labels and string in English locale file. The text is given by the product team which makes sure that correct message is displayed to user and he can understand it.
+- Then pseudo localization testing is done to ensure every string is covered in localization.
+- The English text is then given to translation team where they gave the corresponding translations for all supported languages.
+- Then QA does localization testing to check if there are any issues on UI when using other languages. If any issues are found we fix them or ask the translation team to fix it.
+- I used react-i18next to integrate i18next with React. We wrap the application with I18nextProvider, and configure plugins to detect the browser language, load the JSON translation files, and set a fallback language and namespace.
+- It gives useTranslation hook. It gives t function which gives translation for given key and also accepts dynamic values in parameters and changeLanguage function is used to change language based on user selection.
+
+a11y:
+
+- So we used IBM's own design system called Carbon Design System. It has a UI library for React components, and those components are accessibility compliant out of the box, which follow all the guidelines and standards.
+- The way we catch any accessibility violations is by running browser automation test using playwright.
+- So I run the end to end scenarios and the @axe-core/playwright library does accessibility checks per page across the app.
+- And then axe-html-reporter generates an HTML report of the violations and passes.
+
+---
+
+Built forms using UI library components integrated with form libraries for form handling and validation:
+
+- So I created reusable components by using the form fields available from the UI library and adding things like validation logic, error handling and form state management from the form library.
+- This helped me to use the form fields as per the project's need, and created a consistent form structure across the entire project.
+- So in one of my projects I had integrated the UI components from Carbon Design System library with React Hook Forms. And in one of my other projects I had integrated Material UI library components with Formik and Yup library.
+
+—
+
+CDS:
+
+- So Carbon design system is an open source design system developed by IBM and it's used across all IBM products. And Sterling File Gateway is a product within the IBM ecosystem where the UI must follow some predefined patterns, some guidelines and have consistency. Also it has built in accessibility support.
+
+MUI:
+
+- Its a rich component library, has lot of customization options, easy to use, like plug and play so development is fast. It has large ecosystem and good community support.
+
+React Hook Forms:
+
+- So the app was large with many modules and many forms inside those modules. I wanted something which will cause minimal re-renders, and handles complex forms efficiently, has small bundle size which matters in enterprise applications.
+- The main advantage of using react hook form is that it stores the form data in uncontrolled components in the ref, not react state and it integrates easily with UI libraries using useController hook.
+
+Formik, Yup:
+
+- Formik stores form data in controlled components in react state. Yup gives schema based validation.
+- So when both used together, the form behavior is predictable and easy to debug.
+
+---
+
+Integrated 20 REST APIs and implemented state management using Context API, Redux Toolkit and Saga middleware:
+
+- I worked on 3 modules and each module typically has 6 to 7 REST APIs - List, Details, Add, Update, Delete, plus few supporting ones like dropdown data sources.
+- So in one of my projects I used Context API, because the shared state was of moderate complexity, and most of the modules in the project had their own state which was isolated and independent of each other.
+- Whatever shared state was present was related to the core functionality, so that was split by logical domains using providers — like the Data Service Provider, Auth Provider, and a few others.
+- In another project I used Redux Toolkit with Saga, because the features were dependent on each other and required sharing and updating the same data.
+- So instead of passing it around through multiple components, I kept it in a central, global store object so any part of the app could access it.
+- RTK also needs less boilerplate than the old react-redux library. Using redux helps in tracking state updates and debugging also becomes easier.
+- Saga is useful to manage complex asynchronous API calls and their side effects.
+
+---
+
+Achieved 100% coverage for unit test with Jest and browser automation with Playwright:
+
+- Unit tests are written for standalone reusable components and custom hooks that are created for our project.
+- React Testing Library is used to write the test scenarios and Jest is used to execute them.
+- Whenever the build is triggered, the unit tests are run as part of the deployment pipeline, and it's successful only if all the unit tests pass.
+- And I tested the end-to-end flow for the feature I had developed by using browser automation.
+- Using Playwright and Cucumber, I write the scenarios in feature files. The steps in that are in plain English so that non-technical stakeholders can understand the functionality.
+- A separate test pipeline runs these every night, and I check the report to ensure everything passes. If something is broken or failing, I fix it immediately — this is how I ensure 100% test coverage.
+
+---
+
+Gathered requirements and built 2 features using AI-first Spec Driven Development:
+
+- We have a shared repository where both the UI and API teams write specs for their features.
+- It has all the coding agents created to follow the SDD process and also the coding standards, instructions, rules that we have defined for our project.
+- We use Github speckit for SDD.
+- We have access to models like Claude Sonnet, Opus, GPT class 5, and get 50,000 AI credits per month which renews every month.
+- So for bigger features, I first gather requirements and create a document called SOLDEF, or Solution Definition. The SOLDEF is used to write a spec.md file. From that, the agent creates a design, plan, and task md files.
+- Once that's reviewed and approved, I run the implement agent, and it writes the code by executing the tasks one by one.
+- I developed one functionality using SDD completely from scratch — there were no UI designs present, so I had to describe how the functionality would look and behave. Based on that, I came up with a POC, and we went through iterations where we refined the UI, observed gaps, discussed solutions, and tested it. This way, I was able to complete the whole functionality in much less time compared to manual coding.
+- The other was a major enhancement to an existing feature. so first I had Copilot read and understand the existing functionality, then updated the specs based on the required change. In that, I had to take care of avoiding regressions.
+
+---
+
+Developed responsive UI layouts optimized for various devices and screen sizes:
+
+- It is likely that the users of this website will be accessing it through their phone or tablet and not always a laptop. So using mediaqueries in the component style I changed the layout based on screen size.
+- Along with that I used the Grid system which automatically adjusted column layout based on screen size, without needing extra custom CSS.
+- So, the library gives predefined breakpoints - small, medium, larger, extra large and accordingly the side navigation and page container adjust themselves.
+
+---
+
+Deployed and verified application builds across remote VM instances:
+
+- We have a Jenkins pipeline which creates an integrated build for UI, API and Identity service and published to an artifactory.
+- The build is then stored on an internal storage server of the company.
+- I download it into my VM and run the installation wizard. In that I do all the configurations like VM IP, Port, selecting drivers, JDK, Database configurations. This installation takes around an hour.
+- Then I run the startup scripts from bin folder to start the application so that its accessible from browser.
+
+---
+
+Gathering requirements & Collaboration:
+
+- We have a UX handoff by the design team. If requirements are not fully clear or there are any technical challenges or logical gaps or some doubts I discussed it with the team and highlighted it early so that designs can be updated if required. That avoids rework.
+- Based on UX handoffs, I analyzed functional and technical requirements. Post that I created estimates for development and testing and created backlog items in JIRA where I had to add description and user acceptance criteria, create necessary subtasks.
+- During UI development I coordinated with the backend team for API integration. If I encountered API errors or had questions around request payloads, parameters, or validations, I raised them with the backend developers and worked together to resolve them. If frontend and backend API contracts evolving in parallel. I coordinated closely with backend developers, clarified contracts early, and handled error scenarios gracefully on the UI side.
+
+---
+
+Challenges:
+
+- As new features are added or a change is requested to existing functionality. As requirements and use cases become more and more complex. The code should adapt to it.
+- Balancing simplicity versus over-engineering in frontend architecture. I chose simpler solutions where appropriate and kept the architecture flexible so it could evolve as complexity increased.
+- Ensuring application quality without slowing development. I prioritized tests for critical flows first, balancing development speed with confidence in releases.
+
+---
+
+DEFECT STORY:
+
+- So we had dropdowns in forms where I initially used a ComboBox field. It fetched items only once on load, and the list API size was set to 1000.
+- For datasets larger than 1000, users could not select items beyond that limit, which created a scalability issue.
+- So I replaced the ComboBox with an AutoComplete component that fetches data in chunks using page size and load more option at end and supports search.
+- This enabled users to load and select dropdown items beyond 1000, improving usability.
+
+PERFORMANCE STORY:
+
+SECURITY STORY:
+
+---
+
+REACT LIBRARIES:
+
+- react-router: `useParams`, `useNavigate`, `useLocation()`, `useBlocker()`, `generatePath()`, `<BrowserRouter>`, `<Routes>`, `<Route>`, `<Link>`, `<Outlet />`
+- formik: `useFormik()`, `<Formik>`, `<Form>`, `useField()`, `<Field>`, `<ErrorMessage>`
+- yup: `Yup.object().shape()`, `.validate()`, `.validateSync()`
+- react-hook-form: `useForm()`, `useFormContext()`, `useController()`, `useWatch()`, `useFieldArray()`, `<FormProvider>`
+- mui: UI Components. `useTheme()`, `useMediaQuery()`, `makeStyles()` / `styled()`
+- cds: UI Components.
+- axios: `axios.get()/post()/put()/delete()`, `axios.interceptors.request.use()`, `axios.interceptors.response.use()`
+- react-i18next: `useTranslation()` gives `t()` and `i18n.changeLanguage()`
+- i18next + i18next-http-backend + i18next-browser-languagedetector: `i18n.use()`
+- @axe-core/playwright: `AxeBuilder()`
+- axe-html-reporter: `createHtmlReport()`
+- redux: `compose()`, `combineReducers()`, `createStore()`
+- react-redux: `useSelector()`, `useDispatch()`, `connect()`
+- @reduxjs/toolkit: `createSlice()`, `createAction()`, `configureStore()`, `createReducer()`, `getDefaultMiddleware()`
+- redux-saga: `call()` - worker saga, `put()` - worker saga, `takeEvery()` - watcher saga, `takeLatest()` - watcher saga, `all()` - root saga, `createSagaMiddleware()`
+- reselect (already included in toolkit by default): `createSelector()`, `createStructuredSelector()`
+- immer: `produce()`
+- redux-persist: `persistReducer()`, `createMigrate()`
+- redux-injectors: `createInjectorsEnhancer()`
+- @types/react-redux: React with typescript
+- redux-logger
+- redux-devtools-extension
+- eslint-plugin-redux-saga
+- react testing library: `render()`, `screen.getBy...()`, `fireEvent`, `waitFor()`, `userEvent.type()`
+- jest: `describe()`, `it()/test()`, `expect()`, `jest.mock()`, `jest.spyOn()`
+- playwright: `page.click()`, `page.fill()`, `expect(page).toHaveURL()`, `page.waitForTimeout()`
+- cucumber: `Given()`, `When()`, `Then()`, step definitions mapped to Gherkin steps
+
+Pointers:
+
+1. What features does the library offer?
+2. What purpose it serves?
+3. How its setup/used in project?
+4. What version is used & alternatives to it?
+5. Specific, niche questions?
+6. What hooks do these libraries offer?
+
+---
+
+**QUESTIONS:**
+
+- What problems did you solve?
+- What challenges did you face and overcome?
+- Walk me through a complete feature end to end?
+- Can you take decisions, trade offs?
+
+---

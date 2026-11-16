@@ -38,8 +38,14 @@ CORE CONCEPTS:
    - Props are the attributes or arguments passed to a react component.
    - Props are read only, their value must not be changed.
 
-3. **Hooks:**
-   - Hooks are the inbuilt functions in react which we can use for acessing and modifying the state variable or do various operations throughout a components lifecycle.
+3. **Hooks:** Hooks are the inbuilt functions in react which we can use for acessing and modifying the state variable or do various operations throughout a components lifecycle.
+   1. useState
+   1. useEffect
+   1. React.Memo, useMemo, useCallback
+   1. useRef,forwardRef
+   1. useContext
+   1. useReducer
+   1. Custom Hooks
 
 4. **Virtual DOM & Reconciliation:**
    - React uses a virtual DOM to compare changes in memory and updates only the necessary parts of the real DOM through reconciliation, minimizing re-renders and improving performance.
@@ -112,6 +118,10 @@ REACT HOCs:
 - So its a function which takes a component as an input and gives enhanced component as its output, without modifying or changing the original component.
 - It does not modify the original component.HOC is a pure function.
 - The argument is typically called WrappedComponent because it refers to the component that is being "wrapped" by the Higher-Order Component (HOC).
+
+---
+
+CONCURRENT RENDERING: .....
 
 ---
 
